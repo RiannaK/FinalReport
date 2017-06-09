@@ -1,0 +1,115 @@
+\begin{thebibliography}{10}
+
+\bibitem{vonNeumann55}
+J.~von Neumann.
+\newblock {\em Mathematical Foundations of Quantum Mechanics}.
+\newblock Princeton University Press, 1955.
+
+\bibitem{Fano57}
+U.~Fano.
+\newblock Description of states in quantum mechanics by density matrix and
+  operator techniques.
+\newblock {\em Rev. Mod. Phys.}, 29:74--93, Jan 1957.
+
+\bibitem{Serafini05}
+A.~Serafini.
+\newblock Multimode uncertainty relations and separability of continuous
+  variable states.
+\newblock {\em Phys. Rev. Lett.}, 96:110402, Mar 2006.
+
+\bibitem{Adesso14}
+G.~Adesso, S.~Ragy, and A.~R. Lee.
+\newblock Continuous variable quantum information: Gaussian states and beyond.
+\newblock {\em Open Systems; Information Dynamics}, 21(01n02):1440001, 2014.
+
+\bibitem{Braunstein}
+S.~L. Braunstein and P.~van Loock.
+\newblock Quantum information with continuous variables.
+\newblock {\em Rev. Mod. Phys.}, 77:513--577, Jun 2005.
+
+\bibitem{Olivares12}
+S.~Olivares and M.~G.~A. Paris.
+\newblock Quantum estimation of states and operations from incomplete data.
+\newblock {\em The European Physical Journal Special Topics}, 203(1):185--192,
+  2012.
+
+\bibitem{Cahill68}
+K.~E. Cahill and R.~J. Glauber.
+\newblock Ordered expansions in boson amplitude operators.
+\newblock {\em Phys. Rev.}, 177:1857--1881, Jan 1969.
+
+\bibitem{Hillery84}
+M.O.~Scully M.~Hillery, R.F.~O'Connell and E.P. Wigner.
+\newblock Distribution functions in physics: Fundamentals.
+\newblock {\em Phys. Revp.}, 106:121--167, 1984.
+
+\bibitem{Ribeiro}
+M.~I. Ribeiro.
+\newblock Gaussian probability density functions: Properties and error charac-
+  terization.
+\newblock Technical report, Instituto Superior Tecnico, 2003.
+
+\bibitem{Schumaker86}
+B.~L. Schumaker.
+\newblock Quantum mechanical pure states with gaussian wave functions.
+\newblock {\em Physics Reports}, 135(6):317 -- 408, 1986.
+
+\bibitem{Adesso07}
+G.~Adesso and F.~Illuminati.
+\newblock Entanglement in continuous-variable systems: recent advances and
+  current perspectives.
+\newblock {\em Journal of Physics A: Mathematical and Theoretical},
+  40(28):7821, 2007.
+
+\bibitem{Plenio03}
+J.~Eisert and M.~B. Plenio.
+\newblock Introduction to the basics of entanglement theory in
+  continuous-variable systems.
+\newblock {\em International Journal of Quantum Information}, 01(04):479--506,
+  2003.
+
+\bibitem{Genoni16}
+M.~G. Genoni, L.~Lami, and A.~Serafini.
+\newblock Conditional and unconditional gaussian quantum dynamics.
+\newblock {\em Contemporary Physics}, 57(3):331--349, 2016.
+
+\bibitem{Genoni15}
+M.~G. Genoni, J.~Zhang, J.~Millen, P.~F. Barker, and A.~Serafini.
+\newblock Quantum cooling and squeezing of a levitating nanosphere via
+  time-continuous measurements.
+\newblock {\em New Journal of Physics}, 17(7):073019.
+
+\bibitem{Sherson}
+J.~Sherson and K.~M\o{}lmer.
+\newblock Entanglement of large atomic samples: A gaussian-state analysis.
+\newblock {\em Phys. Rev. A}, 71:033813, 2005.
+
+\bibitem{Napoli05}
+Olivares~S. Ferraro, A. and M.~G.~A. Paris.
+\newblock {\em Gaussian States in Quantum Information}.
+\newblock Napoli Series on Physics and Astrophysics, Bibliopolis, 2005.
+
+\bibitem{Weedbrook12}
+C.~Weedbrook, S.~Pirandola, R.~Garc\'{\i}a-Patr\'on, N.~J. Cerf, T.~C. Ralph,
+  J.~H. Shapiro, and S.~Lloyd.
+\newblock Gaussian quantum information.
+\newblock {\em Rev. Mod. Phys.}, 84:621--669, 2012.
+
+\bibitem{Arvind95}
+Arvind, B.~Dutta, N.~Mukunda, and R.~Simon.
+\newblock The real symplectic groups in quantum mechanics and optics.
+\newblock {\em Pramana}, 45(6):471--497, 1995.
+
+\bibitem{Williamson36}
+J.~Williamson.
+\newblock On the algebraic problem concerning the normal forms of linear
+  dynamical systems.
+\newblock {\em American Journal of Mathematics}, 58(1):141--163, 1936.
+
+\bibitem{Simon94}
+R.~Simon, N.~Mukunda, and Biswadeb Dutta.
+\newblock Quantum-noise matrix for multimode systems: U(n) invariance,
+  squeezing, and normal forms.
+\newblock {\em Phys. Rev. A}, 49:1567--1583, Mar 1994.
+
+\end{thebibliography}
