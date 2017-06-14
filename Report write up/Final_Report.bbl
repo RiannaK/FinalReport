@@ -112,4 +112,19 @@ R.~Simon, N.~Mukunda, and Biswadeb Dutta.
   squeezing, and normal forms.
 \newblock {\em Phys. Rev. A}, 49:1567--1583, Mar 1994.
 
+\bibitem{Rob29}
+H.~P. Robertson.
+\newblock The uncertainty principle.
+\newblock {\em Phys. Rev.}, 34:163--164, Jul 1929.
+
+\bibitem{Fujita}
+MacNabb III~J. Fujita, S. and A.~Suzuki.
+\newblock On the heisenberg and schrödinger pictures.
+\newblock {\em Journal of Modern Physics}, 5:171--176, 2014.
+
+\bibitem{Wang07}
+Xiang-Bin Wang, Tohya Hiroshima, Akihisa Tomita, and Masahito Hayashi.
+\newblock Quantum information with gaussian states.
+\newblock {\em Physics reports}, 448(1):1--111, 2007.
+
 \end{thebibliography}

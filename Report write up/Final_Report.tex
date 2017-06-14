@@ -11,7 +11,7 @@
 \usepackage{amsmath}
 \numberwithin{equation}{section}
 \linespread{1.3}
-
+\DeclareMathOperator{\Vect}{vec}
 
 \begin{document}
   \pagenumbering{arabic}
@@ -379,10 +379,92 @@ Hence, as required, we arrive at
 For the open system we can state a new equation of motion, the `diffusion equation' \cite{Genoni16}
 \begin{equation} \label{eq:35}
 \frac{d \sigma}{d t} = A\sigma +\sigma A^{T} + D,
-\end{equation} where $A$ and $D$ are the `drift' and `diffusion' matrices respectively. For a coupling, $C$, between the system and the environment, $A$ and $D$ are defined as
+\end{equation} where $A$ and $D$ are the `drift' and `diffusion' matrices respectively. For a coupling matrix, $C$, between the system and the environment, $A$ and $D$ are defined as
 \begin{equation} \label{eq:36}
 A = \Omega H_S + \frac{\Omega C\Omega C^T}{2}\quad\text{and}\quad D = \Omega C \sigma_{E} C^{T} \Omega^T ,
 \end{equation} where $H_S$ refers to the Hamiltonian of the system described by Eq.\ref{eq:22} and $\sigma_E$ is the environment covariance matrix.
+
+\section{Draft: Project work (Decide what of this to actually include)}
+\subsection{Solve for sigma}
+\label{sec:sigmasolve}
+Start with the evolution equation \ref{eq:35}. Set this $=0$ so that the system is relaxed. 
+
+Assume the system is interacting with a Markovian bath in thermal equilibrium, then A is the drift matrix which describes the dissipation in the thermal environment (it dissipates the original signal...) and D is the diffusion matrix which describes the thermal noise.
+
+Steady state solution (to solve for sigma):
+\begin{flalign*}
+\frac{d \sigma}{d t} &= A\sigma +\sigma A^{T} + D&\\
+0 &= A\sigma +\sigma A^{T} + D&\\
+-D &= A\sigma +\sigma A^{T}&\\
+\Vect{(-D)} &= \Vect{(A\sigma +\sigma A^{T})}&\\
+\Vect{(-D)} &= \Vect{(A\sigma)} + \Vect{(\sigma A^{T})}&\\
+\Vect{(-D)} &= (\mathbb{I} \otimes A)\Vect{(\sigma)} + (A \otimes \mathbb{I})\Vect{(\sigma)} & \tag*{\text{using $\Vect{(AB)}=(\mathbb{I} \otimes A)\Vect{(B)}=(B^{T} \otimes \mathbb{I})\Vect{(A)} $}}\\
+\Vect{(-D)} &= (\mathbb{I} \otimes A + \mathbb{I} \otimes A) \Vect{(\sigma)}.&
+\end{flalign*}
+Then left multiply the inverse matrix, and reshape, to get $\sigma$.
+
+\subsection{One mode case}
+First case will be to consider one mode (...) with $A$ and $D$ given as
+\begin{equation*}
+A = -\frac{1}{2}\mathbb{I} + \Omega H \quad\text{and}\quad D = \chi \mathbb{I}.
+\end{equation*}
+Within $A$, $-\frac{1}{2}\mathbb{I}$ describes the dissipation towards the environment and $\Omega H$ is the ...(unitary part), and within $D$, $\chi$ is the coupling constant, reflects the temperature (it is the only parameter of the environment that we consider).
+
+The steady state equation will be given by
+\begin{flalign} \label{eq:37}
+0 &= (-\frac{1}{2}\mathbb{I} + \Omega H)\sigma +\sigma (-\frac{1}{2}\mathbb{I} + \Omega H)^{T} + D&\\
+0 &= -\sigma + (\Omega H)\sigma +\sigma (\Omega H)^{T} + D.&
+\end{flalign}
+
+Want to solve for sigma using the method outlined in \ref{sec:sigmasolve} and find the minimum determinant of $\sigma$ for a given Hamiltonian, $H$, with $\chi$ fixed. We vary $H$ under the constraint that H must be positive definite. 
+
+Using Cholesky decomposition we can construct a matrix which is positive definite:
+\begin{equation*}
+H = LL^{T}
+\end{equation*}
+where 
+\begin{equation*}
+L = \begin{pmatrix}
+a & 0  \\
+b & c\\
+\end{pmatrix}.
+\end{equation*}
+This gives
+\begin{equation*}
+H = \begin{pmatrix}
+a^{2} & ab  \\
+ab & b^{2}+c^{2}\\
+\end{pmatrix}
+\end{equation*}
+and allows us to find the minimum determinant of $\sigma$ by varying the real parameters $a$, $b$ and $c$. This is implemented in `solver.py'.
+
+Determinant minimum is $\chi^{2}$. Trivial case of $H=0$ (i.e. a scaled identity with 0) in \ref{eq:37} gives $-\sigma = -D$ so $\sigma = \chi \mathbb{I}$ therefore $\det(\sigma) = \chi^{2}$. 
+
+Can prove this result:
+
+\emph{Proof}
+
+
+
+What if $D$ is no longer a scaled identity, what if instead it is a squeeze(squeeze/squeezed/squeezer....which one and what is it) state,
+\begin{equation*}
+A = -\frac{1}{2}\mathbb{I} + \Omega H \quad\text{and}\quad D = \chi \begin{pmatrix}
+z & 0  \\
+0 & \frac{1}{z}\\
+\end{pmatrix},
+\end{equation*}
+where $z$ is varied with the constraint that $z>1$. 
+
+This is implemented in `solver.py'.
+Determinant minimum is still $\chi^{2}$.
+
+Can prove this result:
+
+\emph{Proof}
+
+\subsection{Two mode case}
+What is a two mode ...
+
 
 \section{Conclusion}
 \label{sec:conc}
