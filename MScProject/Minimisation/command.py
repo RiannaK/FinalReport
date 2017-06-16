@@ -1,8 +1,25 @@
 from Minimisation.solver import DeterminantMinimiser
-chi = 2
-minimiser = DeterminantMinimiser(chi)
+from numpy import linalg as alg
 
-res = minimiser.minimise()
-print('Solution is: {0}'.format(res.x))
+chi = 2
+number_of_modes = 4
+minimiser = DeterminantMinimiser(chi, number_of_modes)
+
+res, hamiltonian, sigma = minimiser.minimise()
+eigs = alg.eigvals(sigma)
+
+print('Solution, x, is:')
+print(res.x)
+
 print('Minimum determinant is: {0}'.format(res.fun))
-det = minimiser.plot_landscape()
+
+print('Hamiltonian is:/')
+print(hamiltonian)
+
+print('Sigma is:/')
+print(sigma)
+
+print('Eigenvalues of sigma:')
+print(eigs)
+
+#det = minimiser.plot_landscape()

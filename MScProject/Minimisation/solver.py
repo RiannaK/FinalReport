@@ -27,21 +27,29 @@ class SigmaSolver:
 
 
 class DeterminantMinimiser:
-    def __init__(self, chi):
+    def __init__(self, chi, number_of_modes):
         self.chi = chi
-        self.size = 2
+        self.number_of_modes = number_of_modes
         self.sigma_solver = SigmaSolver()
+
+        # We use the arithemtic sum 1 + 2 + 3 + 4 + ... = 0.5n(n+1)
+        self.num_deg_freedom = number_of_modes * (2 * number_of_modes + 1)
 
     def minimise(self):
 
         # x represent [a, b, c, z} where a/b/c form a lower triangle of a
         # Cholesky factor and z is the element in the squeezer state
-        x = np.array([6, -7, 2, -30000])
+        x = np.array([2] * (self.num_deg_freedom + 1))
 
         # fourth parameter must be > 1 for a squeezer state. All other parameters are unbounded.
-        bnds = [-float("inf"), float("inf")], [-float("inf"), float("inf")], [-float("inf"), float("inf")], [1, float("inf")],
-        res = minimize(self.calculate_determinant, x, bounds=bnds)
-        return res
+        inf = float("inf")
+        bnds = [[-inf, inf]] * self.num_deg_freedom + [[1, inf]]
+        res = minimize(self.calculate_determinant, x, bounds=bnds, tol=1e-16)
+
+        hamiltonian = self.get_hamiltonian(res.x)
+        sigma = self.get_sigma(hamiltonian, res.x[-1])
+
+        return res, hamiltonian, sigma
 
     '''
     def test_function(self, x):
@@ -50,30 +58,52 @@ class DeterminantMinimiser:
         f += np.array([1, 2, 3]).dot(x)
         return f
     '''
+    def num_deg_freedom(self):
 
-    def calculate_determinant(self, x):
-        hamiltonian = self.get_hamiltonian(*x[0:3])
+        # We use the arithemtic sum 1 + 2 + 3 + 4 + ... = 0.5n(n+1)
+        num_deg_freedom = self.number_of_modes * (2 * self.number_of_modes + 1)
+
+    def get_sigma(self, hamiltonian, z):
 
         drift = self.calculate_drift(hamiltonian)
-        diffusion = self.calculate_diffusion(x[3])
+        diffusion = self.calculate_diffusion(z)
         sigma = self.sigma_solver.solve(drift, diffusion)
 
-        determinant = np.linalg.det(sigma)
+        return sigma
+
+    def calculate_determinant(self, x):
+
+        hamiltonian = self.get_hamiltonian(x[0:self.num_deg_freedom])
+        sigma = self.get_sigma(hamiltonian, x[-1])
+
+        sub_matrix = sigma[0:2, 0:2]
+        determinant = np.linalg.det(sub_matrix)
 
         return determinant
 
-    def get_hamiltonian(self, a, b, c):
-        lower = np.array([[a, 0], [b, c]])
+    def get_hamiltonian(self, parameters):
+
+        lower = np.zeros(shape=(2 * self.number_of_modes, 2 * self.number_of_modes))
+
+        count = 0
+        for i in range(2 * self.number_of_modes):
+            for j in range(i+1):
+                lower[i,j] = parameters[count]
+                count += 1
+
         hamiltonian = lower.dot(lower.T)
         return hamiltonian
 
     def calculate_drift(self, hamiltonian):
-        symplectic_matrix = np.array([[0, 1], [-1, 0]])
+        symplectic_form = np.array([[0, 1], [-1, 0]])
+        identity = np.eye(self.number_of_modes)
+        symplectic_matrix = np.kron(symplectic_form, identity)
 
-        drift_matrix = np.eye(self.size) * -0.5 + symplectic_matrix.dot(hamiltonian)
+        drift_matrix = np.eye(2 * self.number_of_modes) * -0.5 + symplectic_matrix.dot(hamiltonian)
 
         return drift_matrix
 
+    '''
     def plot_landscape(self):
 
         max = 2.50
@@ -99,7 +129,7 @@ class DeterminantMinimiser:
             for j, y in enumerate(points):
                 d[i, j] = self.calculate_determinant((x, y, x, 1))
 
-        ''' todo but need to get z points > 1 
+        ########## todo but need to get z points > 1 
         e = np.zeros((len(points), len(points)))
         for i, x in enumerate(points):
             for j, y in enumerate(points):
@@ -110,7 +140,7 @@ class DeterminantMinimiser:
         for i, x in enumerate(points):
             for j, y in enumerate(points):
                 f[i, j] = self.calculate_determinant((x, 0, x, y))
-        '''
+        ##################
 
         fig = plt.figure()
 
@@ -135,6 +165,7 @@ class DeterminantMinimiser:
         ax22.set_ylabel('a=c')
 
         plt.show()
+        '''
 
     def calculate_diffusion(self, z):
-        return self.chi * np.array([[z, 0], [0, 1/z]])
+        return self.chi * np.eye(2 * self.number_of_modes)
