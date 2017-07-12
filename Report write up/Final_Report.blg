@@ -1,16 +1,57 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Final_Report.aux
-The style file: unsrt.bst
-Database file #1: bib_file.bib
-I was expecting a `,' or a `}'---line 163 of file bib_file.bib
+The style file: ieeetr.bst
+Database file #1: bibl_file.bib
+I was expecting a `,' or a `}'---line 124 of file bibl_file.bib
  :  
  :  year={2015}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Sch30"
-Warning--I didn't find a database entry for "Heisenberg27"
+I was expecting a `,' or a `}'---line 181 of file bibl_file.bib
+ : 
+ : @article{Rob29,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Name 1 in "G. Adesso, and F. Illuminati" has a comma at the end for entry Adesso07
+while executing---line 969 of file ieeetr.bst
+Name 1 in "J. Eisert, and M. B. Plenio" has a comma at the end for entry Plenio03
+while executing---line 969 of file ieeetr.bst
 Warning--empty year in Genoni15
-Too many commas in name 1 of "Ferraro, A., Olivares, S. and Paris, M. G. A." for entry Napoli05
-while executing---line 944 of file unsrt.bst
-Too many commas in name 1 of "Fujita, S., MacNabb III, J. and Suzuki, A." for entry Fujita
-while executing---line 944 of file unsrt.bst
-(There were 3 error messages)
+Name 1 in "J. Sherson, and K. M\o{}lmer" has a comma at the end for entry Sherson
+while executing---line 969 of file ieeetr.bst
+Name 1 in "A. Ferraro, and S. Olivares, and M. G. A. Paris" has a comma at the end for entry Napoli05
+while executing---line 969 of file ieeetr.bst
+Name 2 in "A. Ferraro, and S. Olivares, and M. G. A. Paris" has a comma at the end for entry Napoli05
+while executing---line 969 of file ieeetr.bst
+Name 1 in "C. Weedbrook, and S. Pirandola, and R. Garc\'{\i}a-Patr\'on, and N. J. Cerf, and T. C. Ralph, and J. H. Shapiro, and S. Lloyd" has a comma at the end for entry Weedbrook12
+while executing---line 969 of file ieeetr.bst
+Name 2 in "C. Weedbrook, and S. Pirandola, and R. Garc\'{\i}a-Patr\'on, and N. J. Cerf, and T. C. Ralph, and J. H. Shapiro, and S. Lloyd" has a comma at the end for entry Weedbrook12
+while executing---line 969 of file ieeetr.bst
+Name 3 in "C. Weedbrook, and S. Pirandola, and R. Garc\'{\i}a-Patr\'on, and N. J. Cerf, and T. C. Ralph, and J. H. Shapiro, and S. Lloyd" has a comma at the end for entry Weedbrook12
+while executing---line 969 of file ieeetr.bst
+Name 4 in "C. Weedbrook, and S. Pirandola, and R. Garc\'{\i}a-Patr\'on, and N. J. Cerf, and T. C. Ralph, and J. H. Shapiro, and S. Lloyd" has a comma at the end for entry Weedbrook12
+while executing---line 969 of file ieeetr.bst
+Name 5 in "C. Weedbrook, and S. Pirandola, and R. Garc\'{\i}a-Patr\'on, and N. J. Cerf, and T. C. Ralph, and J. H. Shapiro, and S. Lloyd" has a comma at the end for entry Weedbrook12
+while executing---line 969 of file ieeetr.bst
+Name 6 in "C. Weedbrook, and S. Pirandola, and R. Garc\'{\i}a-Patr\'on, and N. J. Cerf, and T. C. Ralph, and J. H. Shapiro, and S. Lloyd" has a comma at the end for entry Weedbrook12
+while executing---line 969 of file ieeetr.bst
+Name 1 in "Arvind, and B. Dutta, and N. Mukunda, and R. Simon" has a comma at the end for entry Arvind95
+while executing---line 969 of file ieeetr.bst
+Name 2 in "Arvind, and B. Dutta, and N. Mukunda, and R. Simon" has a comma at the end for entry Arvind95
+while executing---line 969 of file ieeetr.bst
+Name 3 in "Arvind, and B. Dutta, and N. Mukunda, and R. Simon" has a comma at the end for entry Arvind95
+while executing---line 969 of file ieeetr.bst
+Name 1 in "R. Simon, and N. Mukunda, and B. Dutta" has a comma at the end for entry Simon94
+while executing---line 969 of file ieeetr.bst
+Name 2 in "R. Simon, and N. Mukunda, and B. Dutta" has a comma at the end for entry Simon94
+while executing---line 969 of file ieeetr.bst
+Name 1 in "S. Fujita, and J. McNabb III, and A. Suzuki" has a comma at the end for entry Fujita
+while executing---line 969 of file ieeetr.bst
+Name 2 in "S. Fujita, and J. McNabb III, and A. Suzuki" has a comma at the end for entry Fujita
+while executing---line 969 of file ieeetr.bst
+Name 1 in "X. B. Wang, and T. Hisoshima, and A. Tomita, and M. Hayashi" has a comma at the end for entry Wang07
+while executing---line 969 of file ieeetr.bst
+Name 2 in "X. B. Wang, and T. Hisoshima, and A. Tomita, and M. Hayashi" has a comma at the end for entry Wang07
+while executing---line 969 of file ieeetr.bst
+Name 3 in "X. B. Wang, and T. Hisoshima, and A. Tomita, and M. Hayashi" has a comma at the end for entry Wang07
+while executing---line 969 of file ieeetr.bst
+(There were 23 error messages)

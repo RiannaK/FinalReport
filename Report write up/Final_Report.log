@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.14)  14 JUN 2017 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.14)  12 JUL 2017 11:17
 entering extended mode
 **./Final_Report.tex
 (Final_Report.tex
@@ -21,14 +21,6 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
-Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
-File: latin1.def 2015/03/17 v1.2c Input encoding file
-))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\bm.sty"
 Package: bm 2016/07/07 v1.2b Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
@@ -39,7 +31,7 @@ LaTeX Info: Redefining \bm on input line 208.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks16
+\@emptytoks=\toks14
 \symAMSa=\mathgroup7
 \symAMSb=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
@@ -198,7 +190,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
+\@emptytoks=\toks15
 \ex@=\dimen134
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
@@ -229,21 +221,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \dotsspace@=\muskip16
 \c@parentequation=\count135
 \dspbrk@lvl=\count136
-\tag@help=\toks18
+\tag@help=\toks16
 \row@=\count137
 \column@=\count138
 \maxfields@=\count139
-\andhelp@=\toks19
+\andhelp@=\toks17
 \eqnshift@=\dimen137
 \alignsep@=\dimen138
 \tagshift@=\dimen139
 \tagwidth@=\dimen140
 \totwidth@=\dimen141
 \lineht@=\dimen142
-\@envbody=\toks20
+\@envbody=\toks18
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks21
+\mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
@@ -1130,7 +1122,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks22
+\KV@toks@=\toks20
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
@@ -1153,7 +1145,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen148
 \Gm@layouthoffset=\dimen149
 \Gm@layoutvoffset=\dimen150
-\Gm@dimlist=\toks23
+\Gm@dimlist=\toks21
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
@@ -1305,20 +1297,20 @@ Package color Info: Driver file: pdftex.def on input line 147.
 (Final_Report.aux)
 \openout1 = `Final_Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1361,12 +1353,12 @@ LaTeX Font Info:    ... okay on input line 16.
 \scratchbox=\box44
 \nofMPsegments=\count155
 \nofMParguments=\count156
-\everyMPshowfont=\toks24
+\everyMPshowfont=\toks22
 \MPscratchCnt=\count157
 \MPscratchDim=\dimen158
 \MPnumerator=\count158
 \makeMPintoPDFobject=\count159
-\everyMPtoPDFconversion=\toks25
+\everyMPtoPDFconversion=\toks23
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1381,7 +1373,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box45
-Package hyperref Info: Link coloring OFF on input line 16.
+Package hyperref Info: Link coloring OFF on input line 22.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1391,36 +1383,36 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count160
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
 
 (Final_Report.out) (Final_Report.out)
 \@outlinefile=\write3
 \openout3 = `Final_Report.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 33.
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 33.
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
-<RKPOINT.pdf, id=128, 208.39774pt x 197.19273pt>
+<RKPOINT.pdf, id=136, 208.39774pt x 197.19273pt>
 File: RKPOINT.pdf Graphic file (type pdf)
  <use RKPOINT.pdf>
-Package pdftex.def Info: RKPOINT.pdf used on input line 151.
+Package pdftex.def Info: RKPOINT.pdf used on input line 160.
 (pdftex.def)             Requested size: 208.39722pt x 197.19223pt.
 
-<RKDENSITY.pdf, id=131, 234.14384pt x 200.73624pt>
+<RKDENSITY.pdf, id=139, 234.14384pt x 200.73624pt>
 File: RKDENSITY.pdf Graphic file (type pdf)
  <use RKDENSITY.pdf>
-Package pdftex.def Info: RKDENSITY.pdf used on input line 160.
+Package pdftex.def Info: RKDENSITY.pdf used on input line 169.
 (pdftex.def)             Requested size: 234.14326pt x 200.73573pt.
  [4]
 [5 <./RKPOINT.pdf> <./RKDENSITY.pdf
@@ -1428,90 +1420,40 @@ Package pdftex.def Info: RKDENSITY.pdf used on input line 160.
 pdfTeX warning: pdflatex (file ./RKDENSITY.pdf): PDF inclusion: multiple pdfs w
 ith page group included in a single page
 >] [6] [7]
-Overfull \hbox (10.58267pt too wide) in paragraph at lines 268--269
+Overfull \hbox (10.58267pt too wide) in paragraph at lines 277--278
 \OT1/cmr/m/n/10.95 sym-plec-tic eigen-val-ues can also be cal-cu-lated by con-s
 id-er-ing the (stan-dard, non-symplectic)
  []
 
 
-LaTeX Warning: Citation `Sch30' on page 8 undefined on input line 272.
-
-
-Overfull \hbox (25.67252pt too wide) detected at line 288
+Overfull \hbox (25.67252pt too wide) detected at line 297
 \OML/cmm/m/it/10.95  \OT1/cmr/m/n/10.95 = [] = []  []\OML/cmm/m/it/10.95 :
  []
 
-
-LaTeX Warning: Citation `Heisenberg27' on page 8 undefined on input line 301.
-
-[8] [9] [10] [11]
-! Missing delimiter (. inserted).
-<to be read again> 
-                   \tex_let:D 
-l.441 ... \chi \mathbb{I}$ therefore $\det(\sigma)
-                                                   = \chi^{2}$.
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-! Missing delimiter (. inserted).
-<to be read again> 
-                   \tex_let:D 
-l.441 ... \chi \mathbb{I}$ therefore $\det(\sigma)
-                                                   = \chi^{2}$.
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-
-Overfull \hbox (93.34492pt too wide) in paragraph at lines 449--450
-[]\OT1/cmr/m/n/10.95 What if $\OML/cmm/m/it/10.95 D$ \OT1/cmr/m/n/10.95 is no l
-onger a scaled iden-tity, what if in-stead it is a squeeze(squeeze/squeezed/squ
-eezer....which
+[8] [9] [10] [11] [12] [13]
+Overfull \hbox (24.40771pt too wide) detected at line 562
+[] [] []
  []
 
-(Final_Report.bbl [12] [13] [14]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 122.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 122.
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 478.
- [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 478.
-
-(Final_Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 478.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 478.
+[14] (Final_Report.bbl [15])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 609.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 609.
+ (Final_Report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 609.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 609.
 Package rerunfilecheck Info: File `Final_Report.out' has not changed.
-(rerunfilecheck)             Checksum: 7C434178A076B62973B2446414BC1F79;1210.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 478.
+(rerunfilecheck)             Checksum: 5316F63DDAE880FD3AB43B79145B251D;1334.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 609.
  ) 
 Here is how much of TeX's memory you used:
- 14532 strings out of 493333
- 248879 string characters out of 3139190
- 319543 words of memory out of 3000000
- 17837 multiletter control sequences out of 15000+200000
+ 14490 strings out of 493333
+ 248010 string characters out of 3139190
+ 318529 words of memory out of 3000000
+ 17797 multiletter control sequences out of 15000+200000
  15832 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,14n,42p,10426b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,14n,42p,10426b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTe
@@ -1527,9 +1469,9 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX
 s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb>
-Output written on Final_Report.pdf (15 pages, 268918 bytes).
+Output written on Final_Report.pdf (16 pages, 281640 bytes).
 PDF statistics:
- 388 PDF objects out of 1000 (max. 8388607)
- 106 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 413 PDF objects out of 1000 (max. 8388607)
+ 113 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
