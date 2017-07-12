@@ -1,8 +1,8 @@
 from Minimisation.solver import DeterminantMinimiser
 from numpy import linalg as alg
 
-chi = 2
-number_of_modes = 4
+chi = 1
+number_of_modes = 2
 minimiser = DeterminantMinimiser(chi, number_of_modes)
 
 res, hamiltonian, sigma = minimiser.minimise()
