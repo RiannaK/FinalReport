@@ -3,6 +3,60 @@ from scipy.optimize import minimize
 import matplotlib.pyplot as plt
 
 
+class Problem:
+    def __init__(self, number_of_modes):
+        self.number_of_modes = number_of_modes
+
+    def calculate_drift(self, hamiltonian):
+        raise NotImplementedError()
+
+    def calculate_diffusion(self, z):
+        raise NotImplementedError()
+
+
+class TwoModeCoolingProblem(Problem):
+    def __init__(self, number_of_modes, chi1, chi2, kappa1, kappa2):
+        super().__init__(number_of_modes)
+        self.chi1 = chi1
+        self.chi2 = chi2
+        self.kappa1 = kappa1
+        self.kappa2 = kappa2
+
+    def calculate_diffusion(self, z):
+        matrix = [[self.chi1, 0],[0, self.chi2]]
+        return np.kron(matrix, np.eye(self.number_of_modes))
+
+    def calculate_drift(self, hamiltonian):
+        symplectic_form = np.array([[0, 1], [-1, 0]])
+        identity = np.eye(self.number_of_modes)
+        symplectic_matrix = np.kron(identity, symplectic_form)
+
+        kappa_matrix = [[self.kappa1, 0], [0, self.kappa2]]
+        kappas = np.kron(kappa_matrix, np.eye(self.number_of_modes))
+
+        drift_matrix = -0.5 * kappas + symplectic_matrix.dot(hamiltonian)
+
+        return drift_matrix
+
+
+class TwoModeProblem(Problem):
+    def __init__(self, number_of_modes, chi):
+        super().__init__(number_of_modes)
+        self.chi = chi
+
+    def calculate_drift(self, hamiltonian):
+        symplectic_form = np.array([[0, 1], [-1, 0]])
+        identity = np.eye(self.number_of_modes)
+        symplectic_matrix = np.kron(identity, symplectic_form)
+
+        drift_matrix = -0.5 * np.eye(2 * self.number_of_modes) + symplectic_matrix.dot(hamiltonian)
+
+        return drift_matrix
+
+    def calculate_diffusion(self, z):
+        return self.chi * np.eye(2 * self.number_of_modes)
+
+
 class SigmaSolver:
     def __init__(self):
         pass
@@ -27,13 +81,13 @@ class SigmaSolver:
 
 
 class DeterminantMinimiser:
-    def __init__(self, chi, number_of_modes):
-        self.chi = chi
-        self.number_of_modes = number_of_modes
+    def __init__(self, problem):
+        self.number_of_modes = problem.number_of_modes
         self.sigma_solver = SigmaSolver()
+        self.problem = problem
 
-        # We use the arithemtic sum 1 + 2 + 3 + 4 + ... = 0.5n(n+1)
-        self.num_deg_freedom = number_of_modes * (2 * number_of_modes + 1)
+        # We use the arithmetic sum 1 + 2 + 3 + 4 + ... = 0.5n(n+1)
+        self.num_deg_freedom = self.number_of_modes * (2 * self.number_of_modes + 1)
 
     def minimise(self):
 
@@ -51,25 +105,10 @@ class DeterminantMinimiser:
 
         return res, hamiltonian, sigma
 
-    '''
-    def test_function(self, x):
-        q = np.eye(3)
-        f = 0.5 * x.dot(q.dot(x))
-        f += np.array([1, 2, 3]).dot(x)
-        return f
-    '''
     def num_deg_freedom(self):
 
         # We use the arithemtic sum 1 + 2 + 3 + 4 + ... = 0.5n(n+1)
         num_deg_freedom = self.number_of_modes * (2 * self.number_of_modes + 1)
-
-    def get_sigma(self, hamiltonian, z):
-
-        drift = self.calculate_drift(hamiltonian)
-        diffusion = self.calculate_diffusion(z)
-        sigma = self.sigma_solver.solve(drift, diffusion)
-
-        return sigma
 
     def calculate_determinant(self, x):
 
@@ -87,17 +126,25 @@ class DeterminantMinimiser:
 
         count = 0
         for i in range(2 * self.number_of_modes):
-            for j in range(i+1):
-                lower[i,j] = parameters[count]
+            for j in range(i + 1):
+                lower[i, j] = parameters[count]
                 count += 1
 
         hamiltonian = lower.dot(lower.T)
         return hamiltonian
 
+    def get_sigma(self, hamiltonian, z):
+
+        drift = self.problem.calculate_drift(hamiltonian)
+        diffusion = self.problem.calculate_diffusion(z)
+        sigma = self.sigma_solver.solve(drift, diffusion)
+
+        return sigma
+
     def calculate_drift(self, hamiltonian):
         symplectic_form = np.array([[0, 1], [-1, 0]])
         identity = np.eye(self.number_of_modes)
-        symplectic_matrix = np.kron(symplectic_form, identity)
+        symplectic_matrix = np.kron(identity, symplectic_form)
 
         drift_matrix = np.eye(2 * self.number_of_modes) * -0.5 + symplectic_matrix.dot(hamiltonian)
 
@@ -166,6 +213,3 @@ class DeterminantMinimiser:
 
         plt.show()
         '''
-
-    def calculate_diffusion(self, z):
-        return self.chi * np.eye(2 * self.number_of_modes)

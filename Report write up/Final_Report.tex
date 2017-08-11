@@ -21,20 +21,45 @@
 
 \begin{document}
 	\pagenumbering{arabic}
-	\begin{center}
-		\LARGE{Hamiltonian Control of Open Gaussian Systems}
-		
-		
-		\vspace{0.3cm}
-		
-		\large{Rianna Kelly}
-	\end{center}
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{1cm}
+			
+			\textbf{\LARGE{Hamiltonian Control of Open Gaussian Systems}}
+			
+			\vspace{0.5cm}
+			
+			\large{Rianna Kelly}
+			
+			\vfill
+			
+			A thesis presented for...\\
+			...
+			
+			\vspace{0.8cm}
+			
+			Department of Physics and Astronomy\\
+			University College London\\
+			August 2017
+			
+			\vspace{0.5\textheight}
+			
+		\end{center}
+	\end{titlepage}
 
-	\begin{abstract}
+	\color{red}\begin{abstract}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus sem, ornare in commodo venenatis, pellentesque eget eros. Praesent at laoreet leo. Aliquam vitae elit eu tortor malesuada luctus at non lectus. Ut dapibus quis est nec facilisis. Phasellus et vehicula tellus. Suspendisse ut fringilla tortor. Aenean convallis hendrerit maximus. Ut aliquet purus in eros tincidunt, aliquet semper quam gravida. Donec nec augue quis eros malesuada scelerisque et non neque. Curabitur et orci consequat, vehicula neque vitae, facilisis mauris. Aliquam nec interdum dui. Nam fermentum sem lorem, eu condimentum ex bibendum a. Aliquam eu scelerisque magna, vitae feugiat orci. Nunc.
+	\end{abstract}\color{black}
 	
-	\end{abstract}
+	\tableofcontents
+	\listoffigures
+
+	\newpage
+		
+	\color{red}\section{Introduction}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus sem, ornare in commodo venenatis, pellentesque eget eros. Praesent at laoreet leo. Aliquam vitae elit eu tortor malesuada luctus at non lectus. Ut dapibus quis est nec facilisis. Phasellus et vehicula tellus. Suspendisse ut fringilla tortor. Aenean convallis hendrerit maximus. Ut aliquet purus in eros tincidunt, aliquet semper quam gravida. Donec nec augue quis eros malesuada scelerisque et non neque. Curabitur et orci consequat, vehicula neque vitae, facilisis mauris. Aliquam nec interdum dui. Nam fermentum sem lorem, eu condimentum ex bibendum a. Aliquam eu scelerisque magna, vitae feugiat orci. Nunc.
 	
-	\section{Introduction}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus sem, ornare in commodo venenatis, pellentesque eget eros. Praesent at laoreet leo. Aliquam vitae elit eu tortor malesuada luctus at non lectus. Ut dapibus quis est nec facilisis. Phasellus et vehicula tellus. Suspendisse ut fringilla tortor. Aenean convallis hendrerit maximus. Ut aliquet purus in eros tincidunt, aliquet semper quam gravida. Donec nec augue quis eros malesuada scelerisque et non neque. Curabitur et orci consequat, vehicula neque vitae, facilisis mauris. Aliquam nec interdum dui. Nam fermentum sem lorem, eu condimentum ex bibendum a. Aliquam eu scelerisque magna, vitae feugiat orci. Nunc.\color{black}
 	
 	
 	\subsection{The Density Operator}
@@ -155,19 +180,19 @@
 	\hat{\rho} = \frac{1}{(2\pi)^n} \int \chi_\rho(\mathbf{r})\hat{D}_\textbf{r}  d\textbf{r} = \frac{1}{(2\pi)^n} \int \Tr[\hat{D}_\textbf{r}^\dagger \hat{\rho}]\hat{D}_\textbf{r}  d\textbf{r}.
 	\end{equation} 
 	
-	\begin{figure}
+	\begin{figure}[h]
 		\centering
 		\includegraphics[scale = 1]{RKPOINT}
-		\caption{The displacement operator, $\hat{D}_\mathbf{r}$, shifts the state of the system in phase space.}
+		\caption[Displacement operator]{The displacement operator, $\hat{D}_\mathbf{r}$, shifts the state of the system in phase space.}
 		\label{fig:RKPOINT}
 	\end{figure}
 	
 	The action of this is shown in Figure \ref{fig:RKDENSITY}. We refer to $\chi_\rho$ as the characteristic function and, for every quantum state, $\hat{\rho}$, a corresponding characteristic function, $\chi_\rho$, exists \cite{Hillery84}. The characteristic function of the density operator is crucial to the definition of a Gaussian state, which is a key focus of this paper.
 	
-	\begin{figure}
+	\begin{figure}[h]
 		\centering
 		\includegraphics[scale = 1]{RKDENSITY}
-		\caption{ The state of the system can be represented as a linear combination of displacement operators whose amplitude is modulated by the characteristic function.}
+		\caption[Think of name]{The state of the system can be represented as a linear combination of displacement operators whose amplitude is modulated by the characteristic function.}
 		\label{fig:RKDENSITY}
 	\end{figure}
 	
@@ -359,7 +384,7 @@
 	
 	  
 	\subsection{Open System Dynamics}
-	Finally, we turn our attention to open system dynamics. As outlined in \cite{Genoni16}, the covariance matrix, $\sigma$, fully characterises the shape of the Gaussian and, therefore, captures all the dynamical properties of interest. We would like to apply these techniques to a quantum system that is under the influence of its external environment. We make the simplifying assumption that the system is Markovian; the evolution of the state is entirely determined by the current state and has no dependence on the state's history. 
+	Next, we turn our attention to open system dynamics, which will be the topic of this thesis. As outlined in \cite{Genoni16}, the covariance matrix, $\sigma$, fully characterises the shape of the Gaussian and, therefore, captures all the dynamical properties of interest. We would like to apply these techniques to a quantum system that is under the influence of its external environment. We make the simplifying assumption that the system is Markovian; the evolution of the state is entirely determined by the current state and has no dependence on the state's history. 
 	
 	The evolution of $\sigma$ is described by
 	\begin{equation} \label{eq:33}
@@ -393,124 +418,405 @@
 	A = \Omega H_S + \frac{\Omega C\Omega C^T}{2}\quad\text{and}\quad D = \Omega C \sigma_{E} C^{T} \Omega^T ,
 	\end{equation} where $H_S$ refers to the Hamiltonian of the system described by Eq.\ref{eq:22} and $\sigma_E$ is the environment covariance matrix.
 	
-	\section{Draft: Project work (Decide what of this to actually include)}
-	To all go in introduction at the top. Aim of the project is provide a recipe that yields optimal Hamiltonians for given A and D (if possible). How am I going to do that, what are the steps? Why do I care about minimising the determinant?
+	Taking our simplifying assumption that the system is interacting with a Markovian bath and further assume that this bath is in thermal equilibrium, then $A$, the drift matrix, describes the dissipation in the thermal environment and $D$, the diffusion matrix, describes the thermal noise. We note that $A$ and $D$ are drift and diffusion matrices of a quantum system if and only if \cite{Serafini17}
 	
-	\subsection{Solve for sigma}
+	\begin{equation} \label{eq:37}
+	D + iA \Omega^T - i\Omega A^T \geq 0.
+	\end{equation}
+		
+	Within this thesis the emphasis will be on the steady state diffusion equation which can be found by setting Eq. \ref{eq:35} equal to zero
+	\begin{equation} \label{eq:38}
+	0 = A\sigma +\sigma A^{T} + D.
+	\end{equation}
+	
+	\color{blue}QUESTION TO ASK In this state the system is relaxed and why are we looking specifically at steady state? \color{black}
+	
+	\section{Optimal Cooling Hamiltonian}
+	
+	Find a section to write motivation in, will basically be what's written in the introduction, but as a reminder?
+	
+	The entropy of the system is determined by the covariance matrix, $\sigma$, and cooling the system refers to draining entropy [REF]. Therefore, by removing the heat from a system, we move the system towards a pure state, which is what we need for quantum computing, for example [REF]. The entropy of the state can be found by the determinant of $\sigma$, therefore we want to find the smallest determinant possible in order to find the state with the lowest entropy, i.e. the coolest, and thus most pure, state. We obtain the minimum possible determinant by varying the Hamiltonian. This is all within an environment that is fixed, beyond our control. The optimal cooling Hamiltonian is therefore one which, when considered within the definition of $A$ as shown in \ref{eq:36}, provides the minimum determinant of $\sigma$. 
+	
+	The work within this thesis is limited to quadratic Hamiltonians, the form described by \ref{eq:22}. This does not limit us really as most noise, interactions etc involve quadratic Hamiltonians [REF] and this formalism applies to a range of platforms such as optomechanics [REF], quantum light [REF] and trapped ions [REF] to name only a few. 
+	
+	\subsection{The Steady State Covariance Matrix}
 	\label{sec:sigmasolve}
-	Start with the evolution equation \ref{eq:35}. Set this $=0$ so that the system is relaxed. 
 	
-	Assume the system is interacting with a Markovian bath in thermal equilibrium, then A is the drift matrix which describes the dissipation in the thermal environment (it dissipates the original signal...) and D is the diffusion matrix which describes the thermal noise.
+	To find the optimal cooling Hamiltonian, we must first solve the steady state diffusion equation to find an expression for the steady state covariance matrix, $\sigma$. 
 	
-	Steady state solution (to solve for sigma):
+	We can solve for $\sigma$ using the following method
 	\begin{align*}
-	\frac{d \sigma}{d t} &= A\sigma +\sigma A^{T} + D&\\
 	0 &= A\sigma +\sigma A^{T} + D&\\
 	-D &= A\sigma +\sigma A^{T}&\\
-	\Vect{(-D)} &= \Vect{(A\sigma +\sigma A^{T})}&\\
+	\Vect{(-D)} &= \Vect{(A\sigma +\sigma A^{T})}& \tag*{\text{where vec(X) refers to the vectorisation of a matrix X}}\\
 	\Vect{(-D)} &= \Vect{(A\sigma)} + \Vect{(\sigma A^{T})}&\\
 	\Vect{(-D)} &= (\mathbb{I} \otimes A)\Vect{(\sigma)} + (A \otimes \mathbb{I})\Vect{(\sigma)} & \tag*{\text{using $\Vect{(AB)}=(\mathbb{I} \otimes A)\Vect{(B)}=(B^{T} \otimes \mathbb{I})\Vect{(A)} $}}\\
-	\Vect{(-D)} &= (\mathbb{I} \otimes A + A \otimes \mathbb{I}) \Vect{(\sigma)}.&
+	\Vect{(-D)} &= (\mathbb{I} \otimes A + A \otimes \mathbb{I}) \Vect{(\sigma)}.&\\
+	(\mathbb{I} \otimes A + A \otimes \mathbb{I})^{-1}\Vect{(-D)} &= \Vect{(\sigma)}& \tag*{$\sigma$ can then be found by reshaping.}
 	\end{align*}
-	Then left multiply the inverse matrix, and reshape, to get $\sigma$.
+	 
+	\color{blue}Introduce that I'm going to consider the optimal cooling Hamiltonian in various cases, specifically one and two mode cases - ASK WHAT ON EARTH THESE ARE AND WHY WE TOOK THIS APPROACH \color{black}	
 	
-	\subsection{One mode case}
+	\subsection{One Mode Case}
 	\label{sec:onemode}
-	Open with how to construct H which we need to solve for sigma at the start, then assess the two different D we looked at...
+	\subsubsection{Definitions}
+	\label{sec:onemodedefs}
+	We will first consider the one mode \color{blue}[what does this mean] \color{black}case with $A$ and $D$ given as $2 \times 2$ matrices defined as follows
+	\begin{align*}
+	A &= A_0 + \Omega H \quad\text{where}\quad A_0 = -\frac{1}{2}\mathbb{I},&\\
+	D &= \chi \mathbb{I}.&
+	\end{align*}
+	In the definition of $A$, $A_0$ describes the dissipation towards the environment and does not need to be of Hamiltonian form \color{blue}[what does this mean]\color{black}. $\Omega H$ describes the unitary transformation and we restrict $H$ to $H>0$.\color{blue}`we could actually also drop that restriction, there will be steady states all the same, like in parametric down conversion' from AS 08/08? \color{black} In the definition of $D$, $\chi$ represents the coupling constant and reflects the temperature. Within the one mode case we consider this one parameter for the environment. \color{red}We note that $\chi$ must be greater than 1 to be a valid coupling constant [REF]. \color{black} 
 	
-	First case will be to consider one mode (...) with $A$ and $D$ given as 2x2 matrices
-	\begin{equation*}
-	A = -\frac{1}{2}\mathbb{I} + \Omega H \quad\text{and}\quad D = \chi \mathbb{I}.
-	\end{equation*}
-	Within $A$, $-\frac{1}{2}\mathbb{I}$ describes the dissipation towards the environment and $\Omega H$ is the ...(unitary part), and within $D$, $\chi$ is the coupling constant, reflects the temperature (it is the only parameter of the environment that we consider).
+	To ensure that $A$ and $D$ are drift and diffusion matrices of a quantum system we must check the condition given in Eq. \ref{eq:37}. This can be written as
 	
-	The steady state equation will be given by
-	\begin{align}
-	0 &= (-\frac{1}{2}\mathbb{I} + \Omega H)\sigma +\sigma (-\frac{1}{2}\mathbb{I} + \Omega H)^{T} + D&\\
-	0 &= -\sigma + (\Omega H)\sigma +\sigma (\Omega H)^{T} + D&\\
-	\label{eq:37}
-	0 &= -\sigma + \Omega H\sigma +\sigma H\Omega^{T} + D.
+	\begin{align} 
+	&D + iA \Omega^T - i\Omega A^T \geq 0& \nonumber\\
+	&D + iA_0 (-\Omega) + i (\Omega H) (-\Omega) - i\Omega A_{0}^{T} - i\Omega (-H\Omega) \geq 0& \nonumber\\
+	&D - iA_0 \Omega - i\Omega A_0 \geq 0& \label{eq:42}.
 	\end{align}
 	
-	
-	Want to solve for sigma using the method outlined in Section \ref{sec:sigmasolve} and find the minimum determinant of $\sigma$ for a given Hamiltonian, $H$, with $\chi$ fixed. We vary $H$ under the constraint that H must be positive definite. 
-	
-	Using Cholesky decomposition we can construct a matrix which is positive definite:
+	Using the definitions for $A$ and $D$, \ref{eq:42} becomes	
 	\begin{equation*}
-	H = LL^{T}
+	\begin{pmatrix}
+	\chi & 0  \\
+	0 & \chi \\
+	\end{pmatrix} + i\begin{pmatrix}
+	\frac{1}{2} & 0  \\
+	0 & \frac{1}{2} \\
+	\end{pmatrix}\begin{pmatrix}
+	0 & 1  \\
+	-1 & 0 \\
+	\end{pmatrix} + i\begin{pmatrix}
+	0 & 1  \\
+	-1 & 0 \\
+	\end{pmatrix}\begin{pmatrix}
+	\frac{1}{2} & 0  \\
+	0 & \frac{1}{2} \\
+	\end{pmatrix},
 	\end{equation*}
-	where 
+	resulting in the matrix to evaluate as
 	\begin{equation*}
+	\begin{pmatrix}
+	\chi & i  \\
+	-i & \chi \\
+	\end{pmatrix}.
+	\end{equation*}
+	We can check eigenvalues to see whether the matrix is positive-definite, as required for the condition to hold. The eigenvalues are given by
+	\begin{align*}
+	&(\chi- \lambda)(\chi- \lambda) - 1 = 0&\\
+	&\lambda = \chi \pm 1 \geq 0&\tag*{as $\chi \geq 1$}
+	\end{align*}
+	Therefore, $A$ and $D$ represent the drift ad diffusion matrices of a quantum system.
+	
+	
+	Having solved for sigma using the method outlined in Section \ref{sec:sigmasolve}, we can find the minimum determinant of $\sigma$ by varying the Hamiltonian, $H$, where the environment parameter, $\chi$, is fixed. We vary the Hamiltonian under the constraint that it must be positive-definite \color{red}Write whatever is in line with the decision with this earlier\color{black}. 
+	
+	The Cholesky decomposition of a positive-definite matrix such as the Hamiltonian, $H$, is of the form
+	\begin{equation*}
+	H = LL^{T},
+	\end{equation*}
+	where $L$ is referred to as the lower triangular matrix. 
+	The lower triangular matrix has the form \begin{equation}\label{eq:39}
 	L = \begin{pmatrix}
 	a & 0  \\
 	b & c\\
-	\end{pmatrix}.
-	\end{equation*}
-	This gives
-	\begin{equation*}
+	\end{pmatrix},
+	\end{equation}
+	resulting in a Hamiltonian of the form
+	\begin{equation} \label{eq:41}
 	H = \begin{pmatrix}
 	a^{2} & ab  \\
 	ab & b^{2}+c^{2}\\
-	\end{pmatrix}
-	\end{equation*}
-	and allows us to find the minimum determinant of $\sigma$ by varying the real parameters $a$, $b$ and $c$. This is implemented in `solver.py' and in the spreadsheet.
+	\end{pmatrix}.
+	\end{equation}
+	This allows us to find the minimum determinant of the covariance matrix, $\sigma$, by varying the real parameters $a$, $b$ and $c$ of the Hamiltonian.
 	
-	Trivial case of $H=0$ (i.e. a scaled identity with 0) in Eq. \ref{eq:37} gives $-\sigma = -D$ so $\sigma = \chi \mathbb{I}$ giving $\det\sigma = \chi^{2}$ as the minimum it can ever be.
+	\color{red}\subsection{Method}\color{black}
+	What was the method that we used to get the below results - explain
 	
-	Determinant minimum is $\chi^{2}$ (determinant $\geq \chi^{2}$). 
+	\subsubsection{Minimum Determinant}
 	
-	\emph{Proof}
+	We found that the minimum determinant of the covariance matrix, $\sigma$, is given by $\chi^{2}$, with $\det \sigma \geq \chi^{2}$. 
 	
-	Choice of $A$ and $D$ are independent 
+	\color{red}I DON'T LIKE THIS BIT, LOOKS SUPER MESSY AND IS RUBBISH \color{black}
 	
-	Equation for a physical state, $A$ and $D$ are physical systems but we can divide by $\chi$:
+	Using the definitions given for $A$ and $D$, the steady state diffusion equation (Eq. \ref{eq:38}) can be written as
+	\begin{align}	
+	0 &= (-\frac{1}{2}\mathbb{I} + \Omega H)\sigma +\sigma (-\frac{1}{2}\mathbb{I} + \Omega H)^{T} + D&\nonumber\\
+	0 &= -\sigma + (\Omega H)\sigma +\sigma (\Omega H)^{T} + D& \nonumber\\
+	0 &= -\sigma + \Omega H\sigma +\sigma H\Omega^{T} + D \nonumber&\\
+	0 &= -\sigma + \Omega H\sigma -\sigma H\Omega + \chi \mathbb{I} & \tag*{ as $\sigma$ is symmetric.}
+	\end{align}
+	
+	If we were to take the trivial case of $H=0$ \color{red}There is no Hamiltonian?\color{black}, the above gives $-\sigma = -D$, thus $\sigma = \chi \mathbb{I}$. The determinant of the covariance matrix, $\sigma$, would then be given as $\det\sigma = \chi^{2}$. \color{red}Why are we looking at $H=0$ if we have said multiple times, $H>0$??\color{black}
+	
+	\color{blue}\emph{Proof}
+	
+	Choice of $A$ and $D$ are independent - huh? 
+	
+	Within the steady state diffusion equation Eq. \ref{eq:38}, the covariance matrix, $\sigma$, represents a physical state with $A$ and $D$ representing the drift and diffusion matrices of a quantum system. We can divide by $\chi$ to obtain
 	\begin{equation*}
-	A \frac{\sigma}{\chi} + \frac{\sigma}{\chi} A + \mathbb{I} = 0
+	0 = A \frac{\sigma}{\chi} + \frac{\sigma}{\chi} A + \mathbb{I}.
 	\end{equation*}
-	Here $\frac{\sigma}{\chi}$ is still a steady state solution and for a system to be a physical system we require $\det\frac{\sigma}{\chi} \geq \mathbb{I}$ (ref). $\det\frac{\sigma}{\chi} \geq \mathbb{I}$ gives $\det \sigma \geq \chi^2$. Minimum it can ever be is when $H = 0$ so $\det\frac{\sigma}{\chi} = \mathbb{I}$.
 	
+	Here $\frac{\sigma}{\chi}$ is a steady state solution to the linear equation, and represents physical state. We must therefore have that $\det\frac{\sigma}{\chi} \geq \mathbb{I}$ [REF], resulting in $\det \sigma \geq \chi^2$. 
+	
+	The minimum of this would be the case where $H=0$, where $\det\frac{\sigma}{\chi} = \mathbb{I}$, thus the minimum determinant of the covariance matrix, $\sigma$ must be $\det \sigma = \chi^2$.
 	\begin{equation*}
 	\tag*{\rule{2mm}{2mm}}
-	\end{equation*}
+	\end{equation*}\color{black}
 	
-		
-	Get this in somewhere? --- Gaussian state is pure if and only if the determinant of its CM is 1, $\geq 1$ is a mixed state \cite{Adesso14}.
+	\subsubsection{Optimal Hamiltonian}
+	Within the setup, we are unable to change the environment and so we are looking for the form of the Hamiltonian \color{blue}(this is what we can change, whether it is actually a feasible H is another question we'll think about later...check with AS).\color{black} that gives us this minimum determinant for $\sigma$.
 	
- 	
-	
-	What if $D$ is no longer a scaled identity, what if instead it is a squeeze (squeeze / squeezed / squeezer which one and what is it) state.
+	We found that the optimal cooling Hamiltonian is of the form 
 	
 	\begin{equation*}
-	A = -\frac{1}{2}\mathbb{I} + \Omega H \quad\text{and}\quad D = \chi \begin{pmatrix}
+	H =  \begin{pmatrix}
+	a^2 & 0  \\
+	0 & a^2\\
+	\end{pmatrix}.
+	\end{equation*}
+
+	
+	Then in Eq. \ref{eq:37} we have 
+	\begin{align*}
+	0 &= -\sigma + a^2 (\Omega \sigma + \sigma \Omega^{T}) + \chi \mathbb{I}&\\
+	\text{Suppose $\sigma$ has the form $\alpha \mathbb{I}$}&\\
+	0 &= -\alpha \mathbb{I} + \alpha a^2 (\Omega + \Omega^T) + \chi \mathbb{I}&\\
+	-\alpha \mathbb{I} & = -\chi \mathbb{I} & \tag*{as $\Omega$ is anti-symmetric}&\\
+	\chi &= \alpha&
+	\end{align*}
+	
+	This gives 
+	
+	\begin{equation*}
+	\sigma = \begin{pmatrix}
+	\chi & 0  \\
+	0 & \chi\\
+	\end{pmatrix}
+	\end{equation*} and $\det \sigma = \chi^2$ 
+
+	\subsection{Squeezed state}
+	What if $D$ is no longer a scaled identity, what if instead it is a squeezed state (A squeezed state is ...).
+	
+	\begin{align*}
+	A &= A_0 + \Omega H \quad\text{where}\quad A_0 = -\frac{1}{2}\mathbb{I}&\\
+	D &= \begin{pmatrix}
 	z & 0  \\
 	0 & \frac{1}{z}\\
-	\end{pmatrix},
-	\end{equation*}
-	where $z$ is varied with the constraint that $z>1$. 
+	\end{pmatrix},&
+	\end{align*} where $z$ is varied with the constraint that $z>1$. 
 	
 	This is implemented in `solver.py'.
+	
+	Check that \ref{eq:42} condition still holds:
+	\begin{align*}
+	\begin{pmatrix}
+	z & 0  \\
+	0 & \frac{1}{z}\\
+	\end{pmatrix} + i\begin{pmatrix}
+	\frac{1}{2} & 0  \\
+	0 & \frac{1}{2} \\
+	\end{pmatrix}\begin{pmatrix}
+	0 & 1  \\
+	-1 & 0 \\
+	\end{pmatrix} + i\begin{pmatrix}
+	0 & 1  \\
+	-1 & 0 \\
+	\end{pmatrix}\begin{pmatrix}
+	\frac{1}{2} & 0  \\
+	0 & \frac{1}{2} \\
+	\end{pmatrix}&\\
+	&\begin{pmatrix}
+	z & i  \\
+	-i & \frac{1}{z} \\
+	\end{pmatrix}&
+	\end{align*}
+	Check eigenvalues
+	\begin{align*}
+	&(z- \lambda)(\frac{1}{z} - \lambda) - 1 = 0&\\
+	&\lambda(\lambda - (z+ \frac{1}{z})) = 0&\\
+	&\lambda = 0\quad\text{or}\quad\lambda= z+ \frac{1}{z} \geq 0&\tag*{as $z \geq 1$}
+	\end{align*} so condition holds? 
+	
+	\subsubsection{Minimum Determinant}
 	Determinant minimum is still $\chi^{2}$.
 	
-	Do I need to prove this? \emph{Proof}
+	\color{red}Do I need to prove this? \emph{Proof}\color{black}
+
+	\color{red}\subsubsection{Method}\color{black}
+
 	
 	\subsection{Two mode case}
-	
+	\subsubsection{Definitions}
 	Now considering a two mode case (...) with $A$ and $D$ given as 4x4 matrices
-	\begin{equation*}
-	A = -\frac{1}{2}\mathbb{I} + \Omega H \quad\text{and}\quad D = \chi \mathbb{I}.
-	\end{equation*} (Same as what was considered in Section \ref{sec:onemode} for $A$ and $D$).
+	\begin{align*}
+	A &= A_0 + \Omega H \quad\text{where}\quad A_0 = -\frac{1}{2}\mathbb{I}_4\quad\text{and}\quad \Omega = \begin{pmatrix}
+	0 & 1 & 0 & 0 \\
+	-1 & 0 & 0 & 0\\
+	0 & 0 & 0 & 1\\
+	0 & 0 & -1 & 0\\
+	\end{pmatrix} &\\
+	D &= \chi \mathbb{I}&
+	\end{align*} (Same as what was considered in Section \ref{sec:onemode} for $A$ and $D$).
 	
-	Using the Cholesky decompostion outlined in Section \ref{sec:onemode} we can construct a positive definite Hamiltonian, $H$, with 10 real parameters and solve for $\sigma$. We can then vary these parameters to find the minimum determinant of the one-mode $\sigma$ (top left 2x2 matrix in the 4x4 sigma). 
+	Using the Cholesky decomposition outlined in Section \ref{sec:onemode} we can construct a positive definite Hamiltonian, $H$, with 10 real parameters and solve for $\sigma$. We can then vary these parameters to find the minimum determinant of the one-mode $\sigma$ (top left 2x2 matrix in the 4x4 sigma). 
 	
-	Looks like the determinant minimum is $\frac{\chi^{2}}{4}$. This generalises to $\frac{\chi^{2}}{N^{2}}$, where $N$ is the number of modes.
+	Can check if the required condition for $A$ and $D$ holds:
+
+	\begin{align*}
+	&...\begin{pmatrix}
+	\chi & 0 & 0 & 0\\
+	0 & \chi & 0 & 0\\
+	0 & 0 & \chi & 0 \\
+	0 & 0 & 0 & \chi\\
+	\end{pmatrix} + \frac{i}{2}\begin{pmatrix}
+	1 & 0 & 0 & 0\\
+	0 & 1 & 0 & 0\\
+	0 & 0 & 1 & 0 \\
+	0 & 0 & 0 & 1\\
+	\end{pmatrix}\begin{pmatrix}
+	0 & 1 & 0 & 0 \\
+	-1 & 0 & 0 & 0\\
+	0 & 0 & 0 & 1\\
+	0 & 0 & -1 & 0\\
+	\end{pmatrix}&\\
+	&+ \frac{i}{2}\begin{pmatrix}
+	0 & 1 & 0 & 0 \\
+	-1 & 0 & 0 & 0\\
+	0 & 0 & 0 & 1\\
+	0 & 0 & -1 & 0\\
+	\end{pmatrix}\begin{pmatrix}
+	1 & 0 & 0 & 0\\
+	0 & 1 & 0 & 0\\
+	0 & 0 & 1 & 0 \\
+	0 & 0 & 0 & 1\\
+	\end{pmatrix}&\\
+	&...\begin{pmatrix}
+	\chi & 0 & 0 & 0\\
+	0 & \chi & 0 & 0\\
+	0 & 0 & \chi & 0 \\
+	0 & 0 & 0 & \chi\\
+	\end{pmatrix} + \frac{i}{2}\begin{pmatrix}
+	0 & 1 & 0 & 0 \\
+	-1 & 0 & 0 & 0\\
+	0 & 0 & 0 & 1\\
+	0 & 0 & -1 & 0\\
+	\end{pmatrix}  + \frac{i}{2}\begin{pmatrix}
+	0 & 1 & 0 & 0 \\
+	-1 & 0 & 0 & 0\\
+	0 & 0 & 0 & 1\\
+	0 & 0 & -1 & 0\\
+	\end{pmatrix}&\\
+	&...\begin{pmatrix}
+	\chi & i & 0 & 0 \\
+	-i & \chi & 0 & 0\\
+	0 & 0 & \chi & i\\
+	0 & 0 & -i & \chi\\
+	\end{pmatrix}&
+	\end{align*}	
+
+	Check the eigenvalues of top left block and bottom right?  
+	\begin{align*}
+	&(\chi- \lambda)(\chi- \lambda) - 1&\\
+	&\chi^2 - 1 - 2\chi \lambda + \lambda^2&\\
+	&\lambda = \chi \pm 1 \geq 0& \tag*{as $\chi \geq 1$}
+	\end{align*} so condition holds?
+	
+	
+	\subsection{Minimum Determinant}
+	Determinant minimum is $\chi^{2}$ (determinant $\geq \chi^{2}$).
 		
-	Do I need to prove this? \emph{Proof}	
+	\subsection{Optimal Hamiltonian}
+	Optimal Hamiltonian is $A = \alpha \mathbb{I}$, $B, C = 0$, $D$ is arbitrary in
+	\begin{equation*}
+	H =
+	\left[
+	\begin{array}{c|c}
+	A & B \\
+	\hline
+	C & D
+	\end{array}
+	\right]
+	\end{equation*}
+		
+	\begin{equation}\label{eq:43}
+	H =
+	\left[
+	\begin{array}{c|c}
+	\alpha \mathbb{I} & 0 \\
+	\hline
+	0 & D
+	\end{array}
+	\right]
+	\end{equation}
 	
-	Note that if we took the determinant of the 4x4 sigma, the determinant minimum is $\chi^{4}$. This generalises to $\chi^{2N}$, where $N$ is the number of modes.
+	Ideal case $H=0$, however need to main that the Hamiltonian is positive-definite ($H>0$) so take the identity matrix as an example of a positive-definite matrix that will give the minimum determinant for a given value of $\chi$. 
+
+	If the Hamiltonian is of the form in Eq. \ref{eq:40} then 
 	
-	Proof given in Section \ref{sec:onemode} holds for $\mathbb{I}_{2N}$
+	\begin{equation*}
+	0 = A\sigma +\sigma A^{T} + D
+	\end{equation*} 
 	
+	\begin{align*}
+	A &= -\frac{1}{2}\mathbb{I} + \Omega H&\\
+	 &= -\frac{1}{2} \begin{pmatrix}
+	 1 & 0  \\
+	 0 & 1\\
+	 \end{pmatrix} +  \begin{pmatrix}
+	 \Omega & 0  \\
+	 0 & \Omega\\
+	 \end{pmatrix}
+	 \begin{pmatrix}
+	 H_{11} & H_{12}  \\
+	 H_{21} & H_{22}\\
+	 \end{pmatrix}&\\
+	  &=  -\frac{1}{2} \begin{pmatrix}
+	  1 & 0  \\
+	  0 & 1\\
+	  \end{pmatrix} +  \begin{pmatrix}
+	  \Omega H_{11} & 0  \\
+	  0 & \Omega H_{22}\\
+	  \end{pmatrix}&\tag*{as $H_{12} = H_{21} = 0$}&\\
+	  &= \begin{pmatrix}
+	  \Omega H_{11} -\frac{1}{2}\mathbb{I} & 0  \\
+	  0 & \Omega H_{22}-\frac{1}{2}\mathbb{I}\\
+	  \end{pmatrix}&\\
+	  &= \begin{pmatrix}
+	  A_{11} & 0  \\
+	  0 & A_{22}\\
+	  \end{pmatrix}&
+	\end{align*}
+	
+	\begin{equation*}
+	 -\chi \begin{pmatrix}
+	\mathbb{I} & 0  \\
+	0 & \mathbb{I}\\
+	\end{pmatrix} = \begin{pmatrix}
+	A_{11} & 0  \\
+	0 & A_{22}\\
+	\end{pmatrix}\begin{pmatrix}
+	\sigma_{11} & \sigma_{12}  \\
+	\sigma_{21} & \sigma_{22}\\
+	\end{pmatrix} + \begin{pmatrix}
+	\sigma_{11} & \sigma_{12}  \\
+	\sigma_{21} & \sigma_{22}\\
+	\end{pmatrix}\begin{pmatrix}
+	A_{11}^T & 0  \\
+	0 & A_{22}^T\\
+	\end{pmatrix}
+	\end{equation*}
+	
+	... try $\sigma$ is identity matrix and it works so solution is $\sigma$ is a scaled identity.... 
+	
+	\color{red}\subsection{Method}\color{black}
+	
+ 	\iffalse
 	\section{Something about rotations?}
+	 
 	Eq. \ref{eq:37} can be written as
 	\begin{align*} 
 	0 = -\sigma + \Omega H\sigma -\sigma H\Omega + \chi \mathbb{I} 
@@ -526,9 +832,6 @@
 	\begin{equation*} 
 	0 = -\sigma' + \Omega R H R^T \sigma' - \sigma RH R^T\Omega + \chi \mathbb{I}
 	\end{equation*}
-	
-	
-	
 	
 	Symplectic transformations do not affect the local determinant so R must be local and passive, there's only one choice (??).
 	
@@ -562,48 +865,277 @@
 	\end{equation*}	
 	
 	This will give us a diagonal matrix $H$ where the diagonal values are the eigenvalues. 
-	
+	\fi
 	
 	\section{Cooling in Optomechanics}
-	Drift matrix now defined as
+	\subsection{Definitions}
+	\label{sec:optodefs}	
+	Drift matrix defined as $A_0 +\Omega H$ with
 	\begin{equation*}
-	A = -\frac{1}{2} \begin{pmatrix}
+	A_0 = -\frac{1}{2} \begin{pmatrix}
 	\kappa_1 & 0\\
 	0 & \kappa_{2}\\
 	\end{pmatrix} \otimes \mathbb{I}_2
-	\end{equation*} where $\kappa_1$ is phonon leakage rate, $\kappa_{2}$ is photon leakage rate with $\kappa_{2} > \kappa_{1}$.
+	\end{equation*} where $\kappa_1$ is phonon leakage rate, $\kappa_{2}$ is photon leakage rate with $\kappa_{2} \geq \kappa_{1} \geq 1$.
 	
-	Should I also have $+\Omega H$?? 
-	
-	Diffusion matrix now defined as
+	Diffusion matrix defined as
 	\begin{equation*}
 	D = \begin{pmatrix}
-	\chi_{1} \mathbb{I}_{2} & 0 & 0\\
-	& 0 & 0\\
-	0 & 0 &  \\
-	0 & 0 & \mathbb{I}_{2}\\
-	\end{pmatrix}
-	\end{equation*} (there are no thermal photons...wouldn't that mean $\chi_{2}=0$??)
+	\chi_1 & 0\\
+	0 & \chi_2\\
+	\end{pmatrix} \otimes \mathbb{I}_2
+	\end{equation*} where $\chi_1 \geq \chi_2 \geq 1$ give the number of phonons, photons populating the bath at room temperature.
 	
-	What is the minimum determinant of $\sigma$ for the optimal Hamiltonian for cooling - create $H$ and then do sigma solver etc as before? But how do I get H from A and D?
-	Then consider H of the form:
+	The relationship between $\chi$ and $\kappa$ can be found using Eq.\ref{eq:42}.
+
+	
+	This becomes using the definition of $A$ and $D$ outlined in Section \ref{sec:optodefs}
+	\begin{align*}
+	&...\begin{pmatrix}
+	\chi_1 & 0 & 0 & 0\\
+	0 & \chi_1 & 0 & 0\\
+	0 & 0 & \chi_2 & 0 \\
+	0 & 0 & 0 & \chi_2\\
+	\end{pmatrix} + \frac{i}{2}\begin{pmatrix}
+	\kappa_1 & 0 & 0 & 0\\
+	0 & \kappa_1 & 0 & 0\\
+	0 & 0 & \kappa_2 & 0 \\
+	0 & 0 & 0 & \kappa_2\\
+	\end{pmatrix}\begin{pmatrix}
+	0 & 1 & 0 & 0 \\
+	-1 & 0 & 0 & 0\\
+	0 & 0 & 0 & 1\\
+	0 & 0 & -1 & 0\\
+	\end{pmatrix}&\\
+	&+ \frac{i}{2}\begin{pmatrix}
+	0 & 1 & 0 & 0 \\
+	-1 & 0 & 0 & 0\\
+	0 & 0 & 0 & 1\\
+	0 & 0 & -1 & 0\\
+	\end{pmatrix}\begin{pmatrix}
+	\kappa_1 & 0 & 0 & 0\\
+	0 & \kappa_1 & 0 & 0\\
+	0 & 0 & \kappa_2 & 0 \\
+	0 & 0 & 0 & \kappa_2\\
+	\end{pmatrix}&\\
+	&...\begin{pmatrix}
+	\chi_1 & 0 & 0 & 0\\
+	0 & \chi_1 & 0 & 0\\
+	0 & 0 & \chi_2 & 0 \\
+	0 & 0 & 0 & \chi_2\\
+	\end{pmatrix} + \frac{i}{2}\begin{pmatrix}
+	0 & \kappa_1 & 0 & 0 \\
+	-\kappa_1 & 0 & 0 & 0\\
+	0 & 0 & 0 & \kappa_2\\
+	0 & 0 & -\kappa_2 & 0\\
+	\end{pmatrix}  + \frac{i}{2}\begin{pmatrix}
+	0 & \kappa_1 & 0 & 0 \\
+	-\kappa_1 & 0 & 0 & 0\\
+	0 & 0 & 0 & \kappa_2\\
+	0 & 0 & -\kappa_2 & 0\\
+	\end{pmatrix}&\\
+	&...\begin{pmatrix}
+	\chi_1 & \kappa_1 & 0 & 0 \\
+	-\kappa_1 & \chi_1 & 0 & 0\\
+	0 & 0 & \chi_2 & \kappa_2\\
+	0 & 0 & -\kappa_2 & \chi_2\\
+	\end{pmatrix}&	
+	\end{align*}
+	
+	Consider each block individually as they are completely distinct.
+	
+	Determinant top left gives $\chi_{1}^2 - \kappa_{1}^2 \geq 0$, $\chi_1 \geq \kappa_1$ and other gives $\chi_{2}^2 - \kappa_{2}^2 \geq 0$, $\chi_2 \geq \kappa_2$. This shows $\chi \geq \kappa$. \color{red} What's the relation between $\chi_1, \chi_2, \kappa_1, \kappa_2$
+	
+	And we can also see that the required condition for $A$ and $D$ holds...Check the eigenvalues: 
+	\begin{align*}
+	&(\chi_1- \lambda)(\chi_1- \lambda) - \kappa_{1}^2&\\
+	&\chi_{1}^2 - \kappa_{1}^2 - 2\chi_{1}\lambda + \lambda^2&\\
+	&\lambda = \chi_1 \pm \kappa_1 \geq 0& \tag*{as $\chi_1 \geq \kappa_1$}
+	\end{align*} so condition holds? \color{black}
+
+	\subsection{Minimum Determinant}
+	The minimum determinant is given by $\Big(\dfrac{\chi_1 + \chi_2}{\kappa_1 + \kappa_2}\Big)^2$.  
+	
+	Because we know that $\chi \geq \kappa$ this determinant will always be $\geq 1$, as required. 
+	
+	\subsection{Optimal Hamiltonian}
+	
+	In the limit that $N \rightarrow \infty$, the optimal Hamiltonian is given by
+	
+	\begin{equation*}
+	H = N \begin{pmatrix}
+	1 & 1  \\
+	1 & 1\\
+	\end{pmatrix} \otimes \mathbb{I}_2.
+	\end{equation*}
+	
+	The solution to $\sigma$ for finite $N$ is given by 
+	
+	\begin{equation*}
+	\sigma = \begin{pmatrix}
+	a & 0 & 0 & c\\
+	0 & a & -c & 0\\
+	0 & -c & b & 0 \\
+	c & 0 & 0 & b\\
+	\end{pmatrix}
+	\end{equation*}	
+	where, for convenience, we define $\alpha := \Big(\dfrac{\chi_1 + \chi_2}{\kappa_1 + \kappa_2}\Big)$ and $\beta := 1 + \frac{\kappa_1 \kappa_2}{4N^2}$ and then define
+	
+	
+	\begin{align*}
+	&a := \frac{\alpha + \frac{\chi_1 \kappa_2}{4N^2}}{\beta}&\\
+	&b := \frac{\alpha + \frac{\chi_2 \kappa_1}{4N^2}}{\beta}&\\
+	&c := \frac{\chi_1 \kappa_2 - \kappa_1 \chi_2}{2N\beta (\kappa_1+\kappa_2)}&		
+	\end{align*}
+
+
+It is straightforward to show that this expression for $\sigma$ satisfies the steady state diffusion equation:
+
+	\begin{align*}
+	&A\sigma +\sigma A^{T}&\\
+	&= \begin{pmatrix}
+	-\frac{\kappa_1}{2} & N & 0 & N\\
+	-N & -\frac{\kappa_1}{2} & -N & 0 \\
+	0 & N & -\frac{\kappa_2}{2} & N\\
+	-N & 0 & -N & -\frac{\kappa_2}{2}\\
+	\end{pmatrix}\begin{pmatrix}
+	a & 0 & 0 & c\\
+	0 & a & -c & 0\\
+	0 & -c & b & 0 \\
+	c & 0 & 0 & b\\
+	\end{pmatrix} + \begin{pmatrix}
+	a & 0 & 0 & c\\
+	0 & a & -c & 0\\
+	0 & -c & b & 0 \\
+	c & 0 & 0 & b\\
+	\end{pmatrix}\begin{pmatrix}
+	-\frac{\kappa_1}{2} & -N & 0 & -N\\
+	N & -\frac{\kappa_1}{2} & N & 0 \\
+	0 & -N & -\frac{\kappa_2}{2} & -N\\
+	N & 0 & N & -\frac{\kappa_2}{2}\\
+	\end{pmatrix}&\\
+	&= \begin{pmatrix}
+	-\kappa_1 a - 2Nc & 0 & 0 & \frac{1}{2}(\kappa_1 + \kappa_2)c + N(b-a)\\
+	0 & -\kappa_1 a - 2Nc & -\frac{1}{2}(\kappa_1 + \kappa_2)c - N(b-a) & 0 \\
+	0 & -\frac{1}{2}(\kappa_1 + \kappa_2)c - N(b-a) & -\kappa_2 b + 2Nc & 0\\
+	\frac{1}{2}(\kappa_1 + \kappa_2)c + N(b-a) & 0 & 0 & -\kappa_2 b + 2Nc\\
+	\end{pmatrix}&\\
+	&= \begin{pmatrix}
+	-\chi_1 & 0 & 0 & 0\\
+	0 & -\chi_1 & 0 & 0 \\
+	0 & 0 & -\chi_2 & 0\\
+	0 & 0 & 0 & -\chi_2\\
+	\end{pmatrix}&\\
+	&= -D&
+	\end{align*}
+	
+	To verify this, first we show that the anti-diagonal terms are zero. Evaluating $\frac{1}{2}(\kappa_1 + \kappa_2)c$ and $N(b-a)$ separately
+	\begin{align*}
+	&\frac{1}{2}(\kappa_1 + \kappa_2) c = \frac{1}{2}(\kappa_1 + \kappa_2) \cdot \frac{\chi_1 \kappa_2 - \kappa_1 \chi_2}{2N\beta (\kappa_1+\kappa_2)} = \frac{1}{4N\beta}(\chi_1 \kappa_2 - \kappa_1 \chi_2)&\\
+	&N(b-a)= N \Big(\frac{\alpha + \frac{\chi_2 \kappa_1}{4N^2}}{\beta} -\frac{\alpha + \frac{\chi_1 \kappa_2}{4N^2}}{\beta}\Big) = \frac{1}{4N\beta}(\chi_2 \kappa_1 - \chi_1 \kappa_2)&\\
+	&\text{gives}\quad\frac{1}{2}(\kappa_1 + \kappa_2)c + N(b-a) = 0\text{ as required.}&
+	\end{align*}
+	
+	Then, evaluating the diagonal terms $-\kappa_1 a - 2Nc$ and $-\kappa_2 b + 2Nc$
+	
+	\begin{align*}
+	-\kappa_1 a - 2Nc &= \frac{-\kappa_1}{\beta} \Big(\alpha + \frac{\chi_1 \kappa_2}{4N^2} \Big) - \frac{\chi_1 \kappa_2 - \kappa_1 \chi_2}{\beta (\kappa_1+\kappa_2)}&\\
+	&= \frac{-\kappa_1 (\kappa_1+\kappa_2) \Big(\alpha + \frac{\chi_1 \kappa_2}{4N^2} \Big) - \chi_1 \kappa_2 - \kappa_1 \chi_2}{\beta (\kappa_1+\kappa_2)}&\\
+	&= \frac{-\chi_1(\kappa_1+\kappa_2)- (\kappa_1+\kappa_2)\chi_1 \frac{\kappa_1 \kappa_2}{4N^2}}{\beta (\kappa_1+\kappa_2)}&\\
+	&= -\chi_1 \frac{\beta}{\beta}&\\
+	&= -\chi_1&
+	\end{align*}
+	
+	\begin{align*}
+	-\kappa_2 b + 2Nc &= \frac{-\kappa_2}{\beta} \Big(\alpha + \frac{\chi_2 \kappa_1}{4N^2} \Big) + \frac{\chi_1 \kappa_2 - \kappa_1 \chi_2}{\beta (\kappa_1+\kappa_2)}&\\
+	&= \frac{-\kappa_2 (\kappa_1+\kappa_2) \Big(\alpha + \frac{\chi_2 \kappa_1}{4N^2} \Big) + \chi_1 \kappa_2 - \kappa_1 \chi_2}{\beta (\kappa_1+\kappa_2)}&\\
+	&= \frac{-\chi_2(\kappa_1+\kappa_2)- (\kappa_1+\kappa_2)\chi_2 \frac{\kappa_1 \kappa_2}{4N^2}}{\beta (\kappa_1+\kappa_2)}&\\
+	&= -\chi_2 \frac{\beta}{\beta}&\\
+	&= - \chi_2&
+	\end{align*}
+	
+
+	In limit that $N \rightarrow \infty$ we first note that $\beta \rightarrow 1$. Then, inspecting terms $a$ and $b$ we see that $a \rightarrow \alpha$, $b \rightarrow \alpha$ and the determinant therefore converges on the minimum determinant $\alpha^2$.
+	
+	
+	\iffalse
+	Solution
+	\begin{equation*}
+	\sigma = \begin{pmatrix}
+	\alpha & 0 & 0 & \epsilon\\
+	0 & \alpha & -\epsilon & 0\\
+	0 & -\epsilon & \alpha & 0 \\
+	\epsilon & 0 & 0 & \alpha\\
+	\end{pmatrix}
+	\end{equation*}	
+	where $\alpha = \Big(\dfrac{\chi_1 + \chi_2}{\kappa_1 + \kappa_2}\Big)$ and $\epsilon = \frac{\big(\frac{\chi_1 + \chi_2}{\kappa_1 + \kappa_2}\big) \frac{\kappa_1}{2} - \frac{\chi_1}{2}}{N} = \frac{\alpha \kappa_1 - \chi_1}{2N}$.
+	
+	\begin{align*}
+	&A\sigma +\sigma A^{T}&\\
+	&= \begin{pmatrix}
+	-\frac{\kappa_1}{2} & N & 0 & N\\
+	-N & -\frac{\kappa_1}{2} & -N & 0 \\
+	0 & N & -\frac{\kappa_2}{2} & N\\
+	-N & 0 & -N & -\frac{\kappa_2}{2}\\
+	\end{pmatrix}		\begin{pmatrix}
+	\alpha & 0 & 0 & \epsilon\\
+	0 & \alpha & -\epsilon & 0\\
+	0 & -\epsilon & \alpha & 0 \\
+	\epsilon & 0 & 0 & \alpha\\
+	\end{pmatrix} + \begin{pmatrix}
+	\alpha & 0 & 0 & \epsilon\\
+	0 & \alpha & -\epsilon & 0\\
+	0 & -\epsilon & \alpha & 0 \\
+	\epsilon & 0 & 0 & \alpha\\
+	\end{pmatrix}	\begin{pmatrix}
+	-\frac{\kappa_1}{2} & -N & 0 & -N\\
+	N & -\frac{\kappa_1}{2} & N & 0 \\
+	0 & -N & -\frac{\kappa_2}{2} & -N\\
+	N & 0 & N & -\frac{\kappa_2}{2}\\
+	\end{pmatrix}&\\
+	&= \begin{pmatrix}
+	2N \epsilon - \kappa_1 \alpha & 0 & 0 & -\frac{1}{2} \epsilon (\kappa_1 + \kappa_2)\\
+	0 & 2N \epsilon - \kappa_1 \alpha & -\frac{1}{2} \epsilon (\kappa_1 + \kappa_2) & 0 \\
+	0 & \frac{1}{2} \epsilon (\kappa_1 + \kappa_2) & -2N \epsilon - \kappa_2 \alpha & 0\\
+	\frac{1}{2} \epsilon (\kappa_1 + \kappa_2) & 0 & 0 & -2N \epsilon - \kappa_2 \alpha\\
+	\end{pmatrix}&\\
+	&= \begin{pmatrix}
+	-\chi_1 & 0 & 0 & \mathcal{O}(N^{-1})\\
+	0 & -\chi_1 & \mathcal{O}(N^{-1}) & 0 \\
+	0 & \mathcal{O}(N^{-1}) & -\chi_2 & 0\\
+	\mathcal{O}(N^{-1}) & 0 & 0 & -\chi_2\\
+	\end{pmatrix}&\\
+	&= -D& \tag*{so $\sigma$ is the steady state solution in the asymptotic limit.}
+	\end{align*}
+	\fi
+	
+	\color{red}\subsection{Method}
+	
+	
+		
+	\subsection{Beam Splitter Hamiltonian}
+
+	
+	Then consider H of the form (Beamsplitter Hamiltonian):
 	\begin{equation*}
 	H = g\begin{pmatrix}
 	0 & 0 & 0 & -1\\
 	0 & 0 & 1 & 0\\
-	0 & -1 & 0 & 0 \\
-	1 & 0 & 0 & 0 \\
+	0 & 1 & 0 & 0 \\
+	-1 & 0 & 0 & 0 \\
 	\end{pmatrix}
-	\end{equation*} where $g$ is the Hamiltonian strength (interaction strength?). Is this optimal form? (This is the beam splitter Hamiltonian?)What value of $g$ gives you the minimum determinant of $\sigma$.
+	\end{equation*} where $g$ is the Hamiltonian strength (interaction strength?). Is this optimal form? NO.
 	
+	What value of $g$ gives you the minimum determinant of $\sigma$. Is there a formula that will give us the best g, for your given chi and kappa values. 
 	
+
 	\section{Conclusion}
 	\label{sec:conc}
-	
+	\color{black}
 	
 	
 	\bibliography{bibl_file}
 	\bibliographystyle{ieeetr}
 	
 	
-\end{document}
+\end{document} 

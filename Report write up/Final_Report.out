@@ -11,10 +11,25 @@
 \BOOKMARK [2][-]{subsection.4.1}{The Heisenberg Picture}{section.4}% 11
 \BOOKMARK [2][-]{subsection.4.2}{Closed System Dynamics}{section.4}% 12
 \BOOKMARK [2][-]{subsection.4.3}{Open System Dynamics}{section.4}% 13
-\BOOKMARK [1][-]{section.5}{Draft: Project work \(Decide what of this to actually include\)}{}% 14
-\BOOKMARK [2][-]{subsection.5.1}{Solve for sigma}{section.5}% 15
-\BOOKMARK [2][-]{subsection.5.2}{One mode case}{section.5}% 16
-\BOOKMARK [2][-]{subsection.5.3}{Two mode case}{section.5}% 17
-\BOOKMARK [1][-]{section.6}{Something about rotations?}{}% 18
-\BOOKMARK [1][-]{section.7}{Cooling in Optomechanics}{}% 19
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 20
+\BOOKMARK [1][-]{section.5}{Optimal Cooling Hamiltonian}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{The Steady State Covariance Matrix}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{One Mode Case}{section.5}% 16
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Definitions}{subsection.5.2}% 17
+\BOOKMARK [2][-]{subsection.5.3}{Method}{section.5}% 18
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Minimum Determinant}{subsection.5.3}% 19
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Optimal Hamiltonian}{subsection.5.3}% 20
+\BOOKMARK [2][-]{subsection.5.4}{Squeezed state}{section.5}% 21
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Minimum Determinant}{subsection.5.4}% 22
+\BOOKMARK [3][-]{subsubsection.5.4.2}{Method}{subsection.5.4}% 23
+\BOOKMARK [2][-]{subsection.5.5}{Two mode case}{section.5}% 24
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Definitions}{subsection.5.5}% 25
+\BOOKMARK [2][-]{subsection.5.6}{Minimum Determinant}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.7}{Optimal Hamiltonian}{section.5}% 27
+\BOOKMARK [2][-]{subsection.5.8}{Method}{section.5}% 28
+\BOOKMARK [1][-]{section.6}{Cooling in Optomechanics}{}% 29
+\BOOKMARK [2][-]{subsection.6.1}{Definitions}{section.6}% 30
+\BOOKMARK [2][-]{subsection.6.2}{Minimum Determinant}{section.6}% 31
+\BOOKMARK [2][-]{subsection.6.3}{Optimal Hamiltonian}{section.6}% 32
+\BOOKMARK [2][-]{subsection.6.4}{Method}{section.6}% 33
+\BOOKMARK [2][-]{subsection.6.5}{Beam Splitter Hamiltonian}{section.6}% 34
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 35
