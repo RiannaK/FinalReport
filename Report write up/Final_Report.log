@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.14)  11 AUG 2017 12:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.14)  13 AUG 2017 23:38
 entering extended mode
 **./Final_Report.tex
 (Final_Report.tex
@@ -1407,7 +1407,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 ....5.1}Definitions}{18}{subsubsection.5.5.1}
+l.25 ...5.4}The Two Mode Case}{19}{subsection.5.4}
                                                    [1])
 \tf@toc=\write4
 \openout4 = `Final_Report.toc'.
@@ -1444,39 +1444,46 @@ Overfull \hbox (25.67252pt too wide) detected at line 322
 \OML/cmm/m/it/10.95  \OT1/cmr/m/n/10.95 = [] = []  []\OML/cmm/m/it/10.95 :
  []
 
-[10] [11] [12] [13] [14] [15] [16] [17] [18] [19]
-
-LaTeX Warning: Reference `eq:40' on page 20 undefined on input line 758.
-
-[20] [21]
-Overfull \hbox (118.63971pt too wide) in paragraph at lines 1030--1030
+[10] [11] [12] [13] [14] [15] [16] [17] [18]
+Overfull \hbox (39.69331pt too wide) in paragraph at lines 726--726
 [] 
  []
 
-[22] [23] (Final_Report.bbl [24] [25])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1141.
- [26]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1141.
+[19] [20] [21]
+Overfull \hbox (103.36543pt too wide) in paragraph at lines 943--943
+[] 
+ []
+
+[22]
+Overfull \hbox (118.63971pt too wide) in paragraph at lines 1041--1041
+[] 
+ []
+
+[23] [24]
+Overfull \hbox (8.96838pt too wide) in paragraph at lines 1073--1074
+[]$\OML/cmm/m/it/10.95 <><><><><><><><><><><><><><><><><><><><><><><><>$ 
+ []
+
+(Final_Report.bbl [25] [26])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1155.
+ [27]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1155.
  (Final_Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1141.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1141.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1155.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1155.
 
 Package rerunfilecheck Info: File `Final_Report.out' has not changed.
-(rerunfilecheck)             Checksum: 33E8D43743B965B20D35EAC9E052C86D;2359.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1141.
+(rerunfilecheck)             Checksum: BEBF23CA15F31CC65D302983E6072C03;2539.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1155.
  ) 
 Here is how much of TeX's memory you used:
- 14559 strings out of 493333
- 248880 string characters out of 3139190
- 331700 words of memory out of 3000000
- 17821 multiletter control sequences out of 15000+200000
+ 14562 strings out of 493333
+ 249004 string characters out of 3139190
+ 328796 words of memory out of 3000000
+ 17820 multiletter control sequences out of 15000+200000
  15840 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,14n,42p,10426b,433s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,14n,42p,10426b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTe
@@ -1491,9 +1498,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/symbols/msbm10.pfb>
-Output written on Final_Report.pdf (27 pages, 323927 bytes).
+Output written on Final_Report.pdf (28 pages, 333645 bytes).
 PDF statistics:
- 582 PDF objects out of 1000 (max. 8388607)
- 153 named destinations out of 1000 (max. 500000)
+ 593 PDF objects out of 1000 (max. 8388607)
+ 157 named destinations out of 1000 (max. 500000)
  291 words of extra memory for PDF output out of 10000 (max. 10000000)
 
