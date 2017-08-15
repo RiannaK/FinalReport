@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.14)  13 AUG 2017 23:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.14)  14 AUG 2017 23:00
 entering extended mode
 **./Final_Report.tex
 (Final_Report.tex
@@ -1294,23 +1294,62 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-(Final_Report.aux)
+("C:\Program Files\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty"
+Package: mathtools 2017/05/24 v1.19 mathematical typesetting tools
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count154
+\calc@Bcount=\count155
+\calc@Adimen=\dimen157
+\calc@Bdimen=\dimen158
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count156
+\calc@Cskip=\skip55
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty"
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+
+LaTeX Warning: You have requested, on input line 116, version
+               `2016/11/05' of package amsmath,
+               but only version
+               `2016/06/28 v2.15d AMS math features'
+               is available.
+
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count157
+\l_MT_multwidth_dim=\dimen159
+\origjot=\skip56
+\l_MT_shortvdotswithinadjustabove_dim=\dimen160
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen161
+\l_MT_above_intertext_sep=\dimen162
+\l_MT_below_intertext_sep=\dimen163
+\l_MT_above_shortintertext_sep=\dimen164
+\l_MT_below_shortintertext_sep=\dimen165
+) (Final_Report.aux)
 \openout1 = `Final_Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1348,16 +1387,16 @@ LaTeX Font Info:    ... okay on input line 22.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count154
-\scratchdimen=\dimen157
+\scratchcounter=\count158
+\scratchdimen=\dimen166
 \scratchbox=\box44
-\nofMPsegments=\count155
-\nofMParguments=\count156
+\nofMPsegments=\count159
+\nofMParguments=\count160
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count157
-\MPscratchDim=\dimen158
-\MPnumerator=\count158
-\makeMPintoPDFobject=\count159
+\MPscratchCnt=\count161
+\MPscratchDim=\dimen167
+\MPnumerator=\count162
+\makeMPintoPDFobject=\count163
 \everyMPtoPDFconversion=\toks23
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1373,7 +1412,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box45
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 23.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1381,11 +1420,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count160
+\c@section@level=\count164
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
 
 (Final_Report.out) (Final_Report.out)
 \@outlinefile=\write3
@@ -1407,7 +1446,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 ...5.4}The Two Mode Case}{19}{subsection.5.4}
+l.25 ...ne {5.4.2}Method}{18}{subsubsection.5.4.2}
                                                    [1])
 \tf@toc=\write4
 \openout4 = `Final_Report.toc'.
@@ -1417,73 +1456,69 @@ l.25 ...5.4}The Two Mode Case}{19}{subsection.5.4}
 \openout5 = `Final_Report.lof'.
 
 
-[2] [3] [4] [5] [6] <RKPOINT.pdf, id=259, 208.39774pt x 197.19273pt>
+[2] [3]
+Overfull \hbox (3.371pt too wide) in paragraph at lines 78--79
+[]\OT1/cmr/m/n/10.95 From our def-i-ni-tion []1.1[], it fol-lows that the den-s
+ity ma-trix is both positive-semidefinite, 
+ []
+
+[4] [5] <RKPOINT.pdf, id=256, 208.39774pt x 197.19273pt>
 File: RKPOINT.pdf Graphic file (type pdf)
-
-<use RKPOINT.pdf>
-Package pdftex.def Info: RKPOINT.pdf used on input line 185.
+ <use RKPOINT.pdf>
+Package pdftex.def Info: RKPOINT.pdf used on input line 189.
 (pdftex.def)             Requested size: 208.39722pt x 197.19223pt.
- <RKDENSITY.pdf, id=262, 234.14384pt x 200.73624pt>
-File: RKDENSITY.pdf Graphic file (type pdf)
 
-<use RKDENSITY.pdf>
-Package pdftex.def Info: RKDENSITY.pdf used on input line 194.
+[6] <RKDENSITY.pdf, id=272, 234.14384pt x 200.73624pt>
+File: RKDENSITY.pdf Graphic file (type pdf)
+ <use RKDENSITY.pdf>
+Package pdftex.def Info: RKDENSITY.pdf used on input line 198.
 (pdftex.def)             Requested size: 234.14326pt x 200.73573pt.
 
+[7 <./RKPOINT.pdf> <./RKDENSITY.pdf
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7 <./RKPOINT.pdf>] [8 <./RKDENSITY.pdf>] [9]
-Overfull \hbox (10.58267pt too wide) in paragraph at lines 302--303
+pdfTeX warning: pdflatex (file ./RKDENSITY.pdf): PDF inclusion: multiple pdfs w
+ith page group included in a single page
+>] [8] [9]
+Overfull \hbox (10.58267pt too wide) in paragraph at lines 306--307
 \OT1/cmr/m/n/10.95 sym-plec-tic eigen-val-ues can also be cal-cu-lated by con-s
 id-er-ing the (stan-dard, non-symplectic)
  []
 
 
-Overfull \hbox (25.67252pt too wide) detected at line 322
+Overfull \hbox (25.67252pt too wide) detected at line 326
 \OML/cmm/m/it/10.95  \OT1/cmr/m/n/10.95 = [] = []  []\OML/cmm/m/it/10.95 :
  []
 
 [10] [11] [12] [13] [14] [15] [16] [17] [18]
-Overfull \hbox (39.69331pt too wide) in paragraph at lines 726--726
+Overfull \hbox (39.69331pt too wide) in paragraph at lines 698--698
 [] 
  []
 
 [19] [20] [21]
-Overfull \hbox (103.36543pt too wide) in paragraph at lines 943--943
+Overfull \hbox (118.63971pt too wide) in paragraph at lines 985--985
 [] 
  []
 
-[22]
-Overfull \hbox (118.63971pt too wide) in paragraph at lines 1041--1041
-[] 
- []
-
-[23] [24]
-Overfull \hbox (8.96838pt too wide) in paragraph at lines 1073--1074
-[]$\OML/cmm/m/it/10.95 <><><><><><><><><><><><><><><><><><><><><><><><>$ 
- []
-
-(Final_Report.bbl [25] [26])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1155.
- [27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1155.
+[22] [23] (Final_Report.bbl [24] [25])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1097.
+ [26]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1097.
  (Final_Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1155.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1155.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1097.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1097.
 
 Package rerunfilecheck Info: File `Final_Report.out' has not changed.
-(rerunfilecheck)             Checksum: BEBF23CA15F31CC65D302983E6072C03;2539.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1155.
+(rerunfilecheck)             Checksum: FE2E46F028479B5D30E018A4503DCB85;2647.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1097.
  ) 
 Here is how much of TeX's memory you used:
- 14562 strings out of 493333
- 249004 string characters out of 3139190
- 328796 words of memory out of 3000000
- 17820 multiletter control sequences out of 15000+200000
+ 15104 strings out of 493333
+ 258673 string characters out of 3139190
+ 342047 words of memory out of 3000000
+ 18355 multiletter control sequences out of 15000+200000
  15840 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,14n,42p,10426b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,14n,42p,10426b,441s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTe
@@ -1498,9 +1533,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/symbols/msbm10.pfb>
-Output written on Final_Report.pdf (28 pages, 333645 bytes).
+Output written on Final_Report.pdf (27 pages, 332169 bytes).
 PDF statistics:
- 593 PDF objects out of 1000 (max. 8388607)
- 157 named destinations out of 1000 (max. 500000)
- 291 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 596 PDF objects out of 1000 (max. 8388607)
+ 154 named destinations out of 1000 (max. 500000)
+ 307 words of extra memory for PDF output out of 10000 (max. 10000000)
 

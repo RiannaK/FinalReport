@@ -2,34 +2,36 @@
 \BOOKMARK [2][-]{subsection.1.1}{The Density Operator}{section.1}% 2
 \BOOKMARK [2][-]{subsection.1.2}{Discrete Variable Systems}{section.1}% 3
 \BOOKMARK [1][-]{section.2}{Continuous Variable Systems}{}% 4
-\BOOKMARK [2][-]{subsection.2.1}{Phase Space Representation}{section.2}% 5
-\BOOKMARK [1][-]{section.3}{Gaussian States}{}% 6
-\BOOKMARK [2][-]{subsection.3.1}{Definition and Interpretation}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.2}{Symplectic Framework}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.3}{The Uncertainty Principle}{section.3}% 9
-\BOOKMARK [1][-]{section.4}{Dynamics}{}% 10
-\BOOKMARK [2][-]{subsection.4.1}{The Heisenberg Picture}{section.4}% 11
-\BOOKMARK [2][-]{subsection.4.2}{Closed System Dynamics}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.3}{Open System Dynamics}{section.4}% 13
-\BOOKMARK [1][-]{section.5}{Optimal Cooling Hamiltonian}{}% 14
-\BOOKMARK [2][-]{subsection.5.1}{The Steady State Covariance Matrix}{section.5}% 15
-\BOOKMARK [2][-]{subsection.5.2}{The One Mode Case}{section.5}% 16
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Drift and Diffusion Matrices}{subsection.5.2}% 17
-\BOOKMARK [3][-]{subsubsection.5.2.2}{Method}{subsection.5.2}% 18
-\BOOKMARK [3][-]{subsubsection.5.2.3}{Minimum Determinant}{subsection.5.2}% 19
-\BOOKMARK [3][-]{subsubsection.5.2.4}{Optimal Hamiltonian}{subsection.5.2}% 20
-\BOOKMARK [2][-]{subsection.5.3}{A Squeezed state}{section.5}% 21
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Drift and Diffusion Matrices}{subsection.5.3}% 22
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Method}{subsection.5.3}% 23
-\BOOKMARK [3][-]{subsubsection.5.3.3}{Minimum Determinant}{subsection.5.3}% 24
-\BOOKMARK [2][-]{subsection.5.4}{The Two Mode Case}{section.5}% 25
-\BOOKMARK [3][-]{subsubsection.5.4.1}{Drift and Diffusion Matrices}{subsection.5.4}% 26
-\BOOKMARK [3][-]{subsubsection.5.4.2}{Method}{subsection.5.4}% 27
-\BOOKMARK [3][-]{subsubsection.5.4.3}{Minimum \(Minor?\) Determinant}{subsection.5.4}% 28
-\BOOKMARK [3][-]{subsubsection.5.4.4}{Optimal Hamiltonian}{subsection.5.4}% 29
-\BOOKMARK [2][-]{subsection.5.5}{THINK OF TITLE}{section.5}% 30
-\BOOKMARK [3][-]{subsubsection.5.5.1}{Drift and Diffusion Matrices}{subsection.5.5}% 31
-\BOOKMARK [3][-]{subsubsection.5.5.2}{Method}{subsection.5.5}% 32
-\BOOKMARK [3][-]{subsubsection.5.5.3}{Minimum \(Minor?\) Determinant}{subsection.5.5}% 33
-\BOOKMARK [3][-]{subsubsection.5.5.4}{Optimal Hamiltonian}{subsection.5.5}% 34
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 35
+\BOOKMARK [2][-]{subsection.2.1}{Definition}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Phase Space Representation}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Gaussian States}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Definition and Interpretation}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Symplectic Framework}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.3}{The Uncertainty Principle}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{Dynamics}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{The Heisenberg Picture}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.2}{Closed System Dynamics}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.3}{Open System Dynamics}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{Optimal Cooling Hamiltonian}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{Motivation}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.2}{The Steady State Covariance Matrix}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.3}{The One Mode Case}{section.5}% 18
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Drift and Diffusion Matrices}{subsection.5.3}% 19
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Method}{subsection.5.3}% 20
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Minimum Determinant}{subsection.5.3}% 21
+\BOOKMARK [3][-]{subsubsection.5.3.4}{Optimal Hamiltonian}{subsection.5.3}% 22
+\BOOKMARK [2][-]{subsection.5.4}{A Squeezed state}{section.5}% 23
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Drift and Diffusion Matrices}{subsection.5.4}% 24
+\BOOKMARK [3][-]{subsubsection.5.4.2}{Method}{subsection.5.4}% 25
+\BOOKMARK [3][-]{subsubsection.5.4.3}{Minimum Determinant}{subsection.5.4}% 26
+\BOOKMARK [2][-]{subsection.5.5}{The Two Mode Case}{section.5}% 27
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Drift and Diffusion Matrices}{subsection.5.5}% 28
+\BOOKMARK [3][-]{subsubsection.5.5.2}{Method}{subsection.5.5}% 29
+\BOOKMARK [3][-]{subsubsection.5.5.3}{Minimum Sub-Determinant}{subsection.5.5}% 30
+\BOOKMARK [3][-]{subsubsection.5.5.4}{Optimal Hamiltonian}{subsection.5.5}% 31
+\BOOKMARK [2][-]{subsection.5.6}{THINK OF TITLE}{section.5}% 32
+\BOOKMARK [3][-]{subsubsection.5.6.1}{Drift and Diffusion Matrices}{subsection.5.6}% 33
+\BOOKMARK [3][-]{subsubsection.5.6.2}{Method}{subsection.5.6}% 34
+\BOOKMARK [3][-]{subsubsection.5.6.3}{Minimum Sub-Determinant}{subsection.5.6}% 35
+\BOOKMARK [3][-]{subsubsection.5.6.4}{Optimal Hamiltonian}{subsection.5.6}% 36
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 37
