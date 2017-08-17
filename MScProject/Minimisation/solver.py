@@ -39,7 +39,7 @@ class TwoModeCoolingProblem(Problem):
         return drift_matrix
 
 
-class TwoModeProblem(Problem):
+class SingleChiProblem(Problem):
     def __init__(self, number_of_modes, chi):
         super().__init__(number_of_modes)
         self.chi = chi
@@ -60,9 +60,6 @@ class TwoModeProblem(Problem):
 class SigmaSolver:
     def __init__(self):
         pass
-
-    '''To do - fill me in:
-    Solves for sigma explain what drift and diffusion are (2x2 numpy arrays) and equation I am trying to solve'''
 
     def solve(self, drift, diffusion):
         identity = np.eye(drift.shape[1])
@@ -150,11 +147,10 @@ class DeterminantMinimiser:
 
         return drift_matrix
 
-    '''
     def plot_landscape(self):
 
-        max = 2.50
-        points = np.arange(-max, max, 0.025)
+        max = 1.6
+        points = np.arange(-max, max, 0.02)
 
         a = np.zeros((len(points), len(points)))
         for i, x in enumerate(points):
@@ -176,7 +172,6 @@ class DeterminantMinimiser:
             for j, y in enumerate(points):
                 d[i, j] = self.calculate_determinant((x, y, x, 1))
 
-        ########## todo but need to get z points > 1 
         e = np.zeros((len(points), len(points)))
         for i, x in enumerate(points):
             for j, y in enumerate(points):
@@ -187,29 +182,28 @@ class DeterminantMinimiser:
         for i, x in enumerate(points):
             for j, y in enumerate(points):
                 f[i, j] = self.calculate_determinant((x, 0, x, y))
-        ##################
 
         fig = plt.figure()
+        bounds = [-max, max, -max, max]
 
         ax11 = fig.add_subplot(2, 2, 1)
-        ax11.imshow(a, cmap='viridis', extent=[-max, max, -max, max], interpolation='nearest')
+        ax11.imshow(a, cmap='viridis', extent=bounds, interpolation='nearest')
         ax11.set_xlabel('a')
         ax11.set_ylabel('b')
 
         ax12 = fig.add_subplot(2, 2, 2)
-        ax12.imshow(b, cmap='viridis', extent=[-max, max, -max, max], interpolation='nearest')
+        ax12.imshow(b, cmap='viridis', extent=bounds, interpolation='nearest')
         ax12.set_xlabel('b')
         ax12.set_ylabel('c')
 
         ax21 = fig.add_subplot(2, 2, 3)
-        ax21.imshow(c, cmap='viridis', extent=[-max, max, -max, max], interpolation='nearest')
+        ax21.imshow(c, cmap='viridis', extent=bounds, interpolation='nearest')
         ax21.set_xlabel('a')
         ax21.set_ylabel('c')
 
         ax22 = fig.add_subplot(2, 2, 4)
-        ax22.imshow(d, cmap='viridis', extent=[-max, max, -max, max], interpolation='nearest')
+        ax22.imshow(d, cmap='viridis', extent=bounds, interpolation='nearest')
         ax22.set_xlabel('b')
         ax22.set_ylabel('a=c')
 
         plt.show()
-        '''

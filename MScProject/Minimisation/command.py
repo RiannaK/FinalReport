@@ -1,40 +1,39 @@
-from Minimisation.solver import DeterminantMinimiser, TwoModeProblem, TwoModeCoolingProblem
-from numpy import linalg as alg
-import numpy as np
-import matplotlib.pyplot as plt
+from Minimisation.solver import DeterminantMinimiser, SingleChiProblem, TwoModeCoolingProblem
 import math
 
-# Parameters for the standard two mode cooling problem
-chi = 1
-number_of_modes = 2
+# Single mode investigation
+print('Chi,Optimised,Model,Agreement')
+for chi in range(1, 10):
+    one_mode_problem = SingleChiProblem(1, chi)
+    minimiser = DeterminantMinimiser(one_mode_problem)
+    res, hamiltonian, sigma = minimiser.minimise()
+
+    theoretical = chi * chi
+    percentage_agree = res.fun / theoretical
+    print('{0} & {1:.4f} & {2:.4f} & {3:.4%} \\\\'.format(chi, res.fun, theoretical, percentage_agree))
+
+one_mode_problem = SingleChiProblem(1, 2)
+minimiser = DeterminantMinimiser(one_mode_problem)
+minimiser.plot_landscape()
 
 # Parameters for the two mode cooling problem
-chi1 = 1
-chi2 = 1
-kappa1 = 2
-kappa2 = 3
+# chi1 >= chi2 >= kappa2 >= kappa1
+print('Chi1,Chi2,Kappa1,Kappa2,Optimised,Model,Agreement')
+for chi1 in range(1, 6):
+    for chi2 in range(1, chi1 + 1):
+        for kappa2 in range(1, chi2 + 1):
+            for kappa1 in range(1, kappa2 + 1):
+                # problem = SingleChiProblem(number_of_modes, chi)
+                problem_cool = TwoModeCoolingProblem(2, chi1, chi2, kappa1, kappa2)
 
-'''
-kappas = []
-results = []
+                minimiser = DeterminantMinimiser(problem_cool)
 
-for kappa2 in np.arange(2,5,0.1):
-'''
-problem = TwoModeProblem(number_of_modes, chi)
-problem_cool = TwoModeCoolingProblem(number_of_modes, chi1, chi2, kappa1, kappa2)
+                res, hamiltonian, sigma = minimiser.minimise()
 
-minimiser = DeterminantMinimiser(problem_cool)
+                theoretical = math.pow( (chi1 + chi2) / (kappa1 + kappa2),2)
+                percentage_agree = res.fun / theoretical
+                print('{0} & {1} & {2} & {3} & {4:.4f} & {5:.4f} & {6:.4%} \\\\'.format(chi1, chi2, kappa1, kappa2, res.fun, theoretical, percentage_agree))
 
-res, hamiltonian, sigma = minimiser.minimise()
-'''
-    print(kappa2)
-    kappas.append(kappa2)
-    results.append(res.fun)
-
-    # eigs = alg.eigvals(sigma)
-
-plt.plot(kappas, results)
-plt.show()
 '''
 print('Solution, x, is:')
 print(res.x)
@@ -51,3 +50,4 @@ print(sigma)
 #print(eigs)
 
 #det = minimiser.plot_landscape()
+'''
