@@ -149,8 +149,8 @@ class DeterminantMinimiser:
 
     def plot_landscape(self):
 
-        max = 1.6
-        points = np.arange(-max, max, 0.02)
+        max = 3
+        points = np.arange(-max, max, 0.03)
 
         a = np.zeros((len(points), len(points)))
         for i, x in enumerate(points):
