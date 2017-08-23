@@ -49,16 +49,21 @@
 		\end{center}
 	\end{titlepage}
 
-	\color{red}\begin{abstract}
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus sem, ornare in commodo venenatis, pellentesque eget eros. Praesent at laoreet leo. Aliquam vitae elit eu tortor malesuada luctus at non lectus. Ut dapibus quis est nec facilisis. Phasellus et vehicula tellus. Suspendisse ut fringilla tortor. Aenean convallis hendrerit maximus. Ut aliquet purus in eros tincidunt, aliquet semper quam gravida. Donec nec augue quis eros malesuada scelerisque et non neque. Curabitur et orci consequat, vehicula neque vitae, facilisis mauris. Aliquam nec interdum dui. Nam fermentum sem lorem, eu condimentum ex bibendum a. Aliquam eu scelerisque magna, vitae feugiat orci. Nunc.
-	\end{abstract}\color{black}
-	
+	\begin{abstract}
+		
+	We examine the steady state diffusion equation with the aim of deriving the Hamiltonian that achieves the lowest entropy and thus maximal cooling for a given configuration. We consider both the one and two mode cases with the latter case playing an important role in the field of optomechanics [THINK HERE]. We present an analytical proof of the lower bound on the determinant of the covariance matrix, $\sigma$, in the one mode case and verify our findings numerically. In the two mode case, we propose a lower bound on the $2 \times 2$ sub determinant and verify the hypothesis numerically.
+		
 	\tableofcontents
 	\listoffigures
 
 	\newpage
 		
 	\color{red}\section{Introduction}
+	
+	
+	In the conclusions and intro, I recommend you to stress the main results: the analytical proof that H=0 is the best one can do for one mode, and the numerical finding about the minimum local determinant for two modes.
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus sem, ornare in commodo venenatis, pellentesque eget eros. Praesent at laoreet leo. Aliquam vitae elit eu tortor malesuada luctus at non lectus. Ut dapibus quis est nec facilisis. Phasellus et vehicula tellus. Suspendisse ut fringilla tortor. Aenean convallis hendrerit maximus. Ut aliquet purus in eros tincidunt, aliquet semper quam gravida. Donec nec augue quis eros malesuada scelerisque et non neque. Curabitur et orci consequat, vehicula neque vitae, facilisis mauris. Aliquam nec interdum dui. Nam fermentum sem lorem, eu condimentum ex bibendum a. Aliquam eu scelerisque magna, vitae feugiat orci. Nunc.
+	
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus sem, ornare in commodo venenatis, pellentesque eget eros. Praesent at laoreet leo. Aliquam vitae elit eu tortor malesuada luctus at non lectus. Ut dapibus quis est nec facilisis. Phasellus et vehicula tellus. Suspendisse ut fringilla tortor. Aenean convallis hendrerit maximus. Ut aliquet purus in eros tincidunt, aliquet semper quam gravida. Donec nec augue quis eros malesuada scelerisque et non neque. Curabitur et orci consequat, vehicula neque vitae, facilisis mauris. Aliquam nec interdum dui. Nam fermentum sem lorem, eu condimentum ex bibendum a. Aliquam eu scelerisque magna, vitae feugiat orci. Nunc.
 	
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus sem, ornare in commodo venenatis, pellentesque eget eros. Praesent at laoreet leo. Aliquam vitae elit eu tortor malesuada luctus at non lectus. Ut dapibus quis est nec facilisis. Phasellus et vehicula tellus. Suspendisse ut fringilla tortor. Aenean convallis hendrerit maximus. Ut aliquet purus in eros tincidunt, aliquet semper quam gravida. Donec nec augue quis eros malesuada scelerisque et non neque. Curabitur et orci consequat, vehicula neque vitae, facilisis mauris. Aliquam nec interdum dui. Nam fermentum sem lorem, eu condimentum ex bibendum a. Aliquam eu scelerisque magna, vitae feugiat orci. Nunc.\color{black}
@@ -96,15 +101,19 @@
 	
 	This equation neatly captures all of the measurable/observable uncertainties of the system and, therefore, justifies our usage of density operators.
 	
+	\iffalse
+	
 	\subsection{Discrete Variable Systems}
 
 	\color{red}AS says to remove this section \color{black}Our focus in this report is on CV systems. Before discussing those, however, it is worth briefly noting that discrete variable systems exist and arise frequently in quantum mechanics. As the name suggests, discrete variable systems are ones in which the possible outcomes of a measurement are discrete (or quantised). This manifests itself mathematically via operators whose eigenvalues are discrete. If, in addition to being discrete, the eigenvalues form a finite set, the system can be handled using matrix vector methods. There are numerous examples of discrete variable systems such as \color{red} the energy levels of a quantum harmonic oscillator (infinite dimensional Hilbert space) or \color{black}the spin of an electron (two dimensional Hilbert space).
+	
+	\fi
 	
 	\section{Continuous Variable Systems}
 	\label{sec:cvs}
 	
 	\subsection{Definition}
-	Eigenvalues (observable values) of a system can also have a continuous spectra which naturally implies that the associated Hilbert space is infinite dimensional. Perhaps, the most obvious examples are the position or momentum of a particle. Noting that any measurement of, say, position must be an eigenvalue of the position operator it must follow that the state space is infinite in extent. 
+	When eigenvalues (observable values) of a system have a continuous spectra, it naturally implies that the associated Hilbert space is infinite dimensional. Perhaps, the most obvious examples are the position or momentum of a particle. Noting that any measurement of, say, position must be an eigenvalue of the position operator it must follow that the state space is infinite in extent. 
 	
 	CV systems are quantum systems described by a pair of canonical operators, i.e. the pair are related via a Fourier transform. Position and momentum are one such example of a canonical/conjugate pair. Canonical pairs satisfy the canonical commutation relation which, for position and momentum, can be written \cite{Serafini05}
 	\begin{equation} \label{eq:6}
@@ -188,7 +197,7 @@
 	\begin{figure}
 		\centering
 		\includegraphics[scale = 1]{RKPOINT}
-		\caption[Displacement operator]{The displacement operator, $\hat{D}_\mathbf{r}$, shifts the state of the system in phase space.}
+		\caption[Action of the displacement operator]{The displacement operator, $\hat{D}_\mathbf{r}$, shifts the state of the system in phase space.}
 		\label{fig:RKPOINT}
 	\end{figure}
 	
@@ -197,7 +206,7 @@
 	\begin{figure}
 		\centering
 		\includegraphics[scale = 1]{RKDENSITY}
-		\caption[Think of name]{The state of the system can be represented as a linear combination of displacement operators whose amplitude is modulated by the characteristic function.}
+		\caption[A Gaussian State representation]{The state of the system can be represented as a linear combination of displacement operators whose amplitude is modulated by the characteristic function.}
 		\label{fig:RKDENSITY}
 	\end{figure}
 	
@@ -206,7 +215,7 @@
 	\label{sec:gaussian} 
 	\subsection{Definition and Interpretation}
 	
-	A Gaussian state is one in which the characteristic function is Gaussian. The utility of such a description comes about from the relatively few parameters required to characterise this state. A one dimension Gaussian distribution is completely characterised by its first and second moments (the mean and variance) \cite{Ribeiro}. The generalisation to a $2N$ dimensional phase space is straightforward; the Gaussian state is completely characterised by a $2N$ dimensional vector of means and a $2N\times2N$ covariance matrix. The use of Gaussian states makes the handling of CV systems significantly more mathematically manageable.
+	A Gaussian state is one in which the characteristic function is Gaussian. The utility of such a description comes about from the relatively few parameters required to characterise this state. A one dimensional Gaussian distribution is completely characterised by its first and second moments (the mean and variance) \cite{Ribeiro}. The generalisation to a $2N$ dimensional phase space is straightforward; the Gaussian state is completely characterised by a $2N$ dimensional vector of means and a $2N\times2N$ covariance matrix. The use of Gaussian states makes the handling of CV systems significantly more mathematically manageable.
 	
 	For $x \in \mathbb{R}^{2N}$, the standard Gaussian function can be written as \cite{Adesso14}
 	\begin{equation} \label{eq:16}
@@ -460,9 +469,13 @@
 	-(\mathbb{I} \otimes A + A \otimes \mathbb{I})^{-1}\Vect{(D)} &= \Vect{(\sigma)}.&
 	\end{align}
 	The covariance matrix, $\sigma$, can then be found by reshaping.
-	Here, vec(X) refers to the vectorisation of a matrix X and line $(*)$ uses the fact that $\Vect{(AB)}=(\mathbb{I} \otimes A)\Vect{(B)}=(B^{T} \otimes \mathbb{I})\Vect{(A)}.$
+	Here, $\Vect(X)$ refers to the vectorisation of an $m \times n$ matrix X and is given by
+	\begin{equation*}
+	\Vect(X)= (x_{11}, ..., x_{m1}, x_{12}, ..., x_{m2}, ..., x_{1n}, ..., x_{mn})^T ,
+	\end{equation*}
+	and line $(*)$ uses the fact that $\Vect{(AB)}=(\mathbb{I} \otimes A)\Vect{(B)}=(B^{T} \otimes \mathbb{I})\Vect{(A)}.$
 
-	In this report, we address the issue of finding the optimal cooling Hamiltonian under various regimes (of increasing complexity). We first consider $\sigma_\text{min}$ in the one mode case where there is one degree of freedom such as a light mode. We then consider two variations on the minimum determinant of the top left $2 \times 2$ partition for $\sigma$ in the two mode case where we have an additional degree of freedom. For example within optomechanics, this additional mode would be a mechanical mode that is coupled to the light mode to form a composite system [REF]. This has applications to the generation of macroscopic superposition \cite{Hoff} which, itself, has applications to quantum metrology \cite{Giovannetti}. These areas are at the centre of many of the biggest debates exploring the foundational aspects of quantum mechanics and gravity \cite{Pikovski} and therefore motivate this study.	
+	In this report, we address the issue of finding the optimal cooling Hamiltonian under various regimes (of increasing complexity). We first consider $\sigma_\text{min}$ in the one mode case where there is one degree of freedom such as a light mode. We then consider two variations on the minimum determinant of the top left $2 \times 2$ partition for $\sigma$ in the two mode case where we have an additional degree of freedom. For example within optomechanics, this additional mode would be a mechanical mode that is coupled to the light mode to form a composite system \cite{Aspelmeyer}. This has applications to the generation of macroscopic superposition \cite{Hoff} which, itself, has applications to quantum metrology \cite{Giovannetti}. These areas are at the centre of many of the biggest debates exploring the foundational aspects of quantum mechanics and gravity \cite{Pikovski} and therefore motivate this study.	
 	
 	\subsection{The One Mode Case}
 	\label{sec:onemode}
@@ -530,11 +543,11 @@
 	
 	\subsubsection{Method}
 
-	A minimisation procedure was implemented in Python code to determine $\sigma_\text{min}$. For completeness, the code is available on GitHub [LINK]. The objective here was twofold: to understand the `shape' of the determinant (as a function of $a, b$ and $c$) and thus rule out the possibility that a local minimum was found; and to empirically derive a formula for $\sigma_\text{min}$ as a function of $\chi$.
+	A minimisation procedure was implemented in Python code to determine $\sigma_\text{min}$. For completeness, the code is available on GitHub \url{https://github.com/RiannaK/FinalReport}. The objective here was twofold: to understand the `shape' of the determinant (as a function of $a, b$ and $c$) and thus rule out the possibility that a local minimum was found; and to empirically derive a formula for $\sigma_\text{min}$ as a function of $\chi$.
 	
 	\subsubsection{Minimum Determinant}
 	
-	Numerical optimisation revealed that $\sigma_\text{min}$ is given by $\chi^{2}$. This relation was numerically verified to 16 significant figures (machine precision) for the first 20 integers. A tabulated set of results is shown in Appendix \ref{sec:onemodetable}. A log-log plot of $\sigma_\text{min}$ against $\chi$ therefore yielded a gradient of 2 and an $R^2$ value of exactly 1, as shown in Figure \ref{fig:OneModePlot}.
+	Numerical optimisation revealed that $\sigma_\text{min}$ is given by $\chi^{2}$. An analytical proof of this will be provided at the end of the section, however this relation was also numerically verified to 16 significant figures (machine precision) for the first 20 integers. A tabulated set of results is shown in Appendix \ref{sec:onemodetable}. A log-log plot of $\sigma_\text{min}$ against $\chi$ therefore yielded a gradient of 2 and an $R^2$ value of exactly 1, as shown in Figure \ref{fig:OneModePlot}.
 	
 	\begin{figure}
 		\centering
@@ -548,7 +561,7 @@
 	\begin{figure}
 		\centering
 		\includegraphics[scale = 0.5]{OneModeGlobalMinima}
-		\caption[One mode determinant plots]{Plots showing the determinant of $\sigma$ as a function of the underlying parameters $a, b$ and $c$. The plots show that $\sigma$ is at a minimum for $a=c$ and $b=0$.}
+		\caption[One mode case: determinant plots]{Plots showing the determinant of $\sigma$ as a function of the underlying parameters $a, b$ and $c$. The plots show that $\sigma$ is at a minimum for $a=c$ and $b=0$.}
 		\label{fig:OneModeGlobalMinima}
 	\end{figure}
 	
@@ -635,6 +648,7 @@
 	\fi 
 	
 	\subsection{The Two Mode Case}
+	\label{sec:twomode}
 	\subsubsection{Drift and Diffusion Matrices}
 	As noted, the methodology for investigating the one mode case can be readily scaled to larger problems. The two mode case is of considerable importance because it gives rise to non-trivial interactions between the two modes (such as entanglement), and can be applied to areas such as optomechanics. In the first instance, we generalise the drift and diffusion matrices to $4 \times 4$ matrices defined as follows
 	\begin{align*}
@@ -647,7 +661,7 @@
 	D &= \chi \mathbb{I}_4 .&
 	\end{align*}
 	
-	Using the Cholesky decomposition procedure outlined in Section \ref{sec:onemode} we can construct an arbitrary positive-definite Hamiltonian, $H$, with $\frac{1}{2}n(n+1)=10$ degrees of freedom. We can then vary these parameters to find the minimum $2 \times 2$ top-left sub-determinant of the covariance matrix, $\sigma$. As was the case in [SECTION BEFORE LINK], we shall continue with our notation of using $\sigma_\text{min}$ and clarify that $\sigma_\text{min}$ refers to the minimum determinant of the first mode in an $n$-mode case (clearly this is simply the determinant in the one mode case). Again, assuming $A$ and $D$ are drift and diffusion matrices of a quantum system, Eq. \ref{eq:37} can be written as 
+	Using the Cholesky decomposition procedure outlined in Section \ref{sec:onemode} we can construct an arbitrary positive-definite Hamiltonian, $H$, with $\frac{1}{2}n(n+1)=10$ degrees of freedom. We can then vary these parameters to find the minimum $2 \times 2$ top-left sub-determinant of the covariance matrix, $\sigma$. As was the case in Section \ref{sec:onemode}, we shall continue with our notation of using $\sigma_\text{min}$ and clarify that $\sigma_\text{min}$ refers to the minimum determinant of the first mode in an $n$-mode case (clearly this is simply the determinant in the one mode case). Again, assuming $A$ and $D$ are drift and diffusion matrices of a quantum system, Eq. \ref{eq:37} can be written as 
 
 	\begin{align*}
 	&\begin{pmatrix}
@@ -696,7 +710,7 @@
 	As was the process in the one mode case, a minimisation procedure was implemented in Python code to determine $\sigma_\text{min}$. To avoid repetition, we shall defer a lengthy discussion of the method to Section \ref{sec:twomodegeneralmethod} as the two mode case discussed here is simply a special case of the more generalised form to be discussed.
 	
 	\subsubsection{Minimum Sub-Determinant}
-	
+	\label{sec:twomodesimplemin}
 	
 	Our numerical analysis again revealed that the relation between $\sigma_\text{min}$ and $\chi$ is given by $\sigma_\text{min}(\chi)=\chi^{2}$. A tabulated set of results is shown in Appendix \ref{sec:twomodetablesimple} and a log-log plot of $\sigma_\text{min}$ against $\chi$ shows this relation in Figure \ref{fig:TwoModePlot}. It is noted that in some cases, the agreement between model and observation was only found accurate to 13 significant figures. While machine precision is generally accurate to 16, some floating point errors are inevitable in matrix operations and, in any case, the observed solution agrees with the model to within the tolerance of the optimiser.
 	
@@ -767,60 +781,9 @@
 	with $\sigma$ clearly having a sub-determinant of $\chi^2$. Eq. \ref{eq:43} has a similar solution which we shall omit here. Instead, we note that the Hamiltonian is a block diagonal and so the top left $2\times2$ matrix in $\sigma$ must also be equal to $\chi\mathbb{I}_2$ by analogy to the solution shown above. Therefore, it will also have a a sub-determinant of $\chi^2$ as required.
 	
 	
- 	\iffalse
-	\section{Something about rotations?}
-	 
-	Eq. \ref{eq:37} can be written as
-	\begin{align*} 
-	0 = -\sigma + \Omega H\sigma -\sigma H\Omega + \chi \mathbb{I} 
-	\end{align*} as $\sigma$ is symmetric. 
+ 
 	
-	The symplectic transformation $R\Omega R^{T} = \Omega$ where $RR^{T}=1$
-
-	\begin{align*} 
-	0 &= -R\sigma R^{T} + R\Omega H\sigma R^{T} - R\sigma H\Omega R^{T} + \chi \mathbb{I}&\\
-	0 &= -R\sigma R^{T} + \Omega R H R^T R \sigma R^{T} - R\sigma R^{T} RH R^T\Omega + \chi \mathbb{I}& 
-	\end{align*}	using $R\Omega = \Omega R$. Then, defining $\sigma' = R\sigma R^T$
-	
-	\begin{equation*} 
-	0 = -\sigma' + \Omega R H R^T \sigma' - \sigma RH R^T\Omega + \chi \mathbb{I}
-	\end{equation*}
-	
-	Symplectic transformations do not affect the local determinant so R must be local and passive, there's only one choice (??).
-	
-	Let $RHR^{-1} = H'$ and the doing an SVD with $R$ defined as
-	\begin{equation*}
-	R = \begin{pmatrix}
-	cos(\theta) & sin(\theta) & 0 & 0\\
-	-sin(\theta) & cos(\theta) & 0 & 0\\
-	0 & 0 & cos(\phi) & sin(\phi) \\
-	0 & 0 & -sin(\phi) & cos(\phi)\\
-	\end{pmatrix}
-	\end{equation*}
-
-	\begin{equation*}
-	\begin{pmatrix}
-	cos(\theta) & sin(\theta) & 0 & 0\\
-	-sin(\theta) & cos(\theta) & 0 & 0\\
-	0 & 0 & cos(\phi) & sin(\phi) \\
-	0 & 0 & -sin(\phi) & cos(\phi)\\
-	\end{pmatrix}	\begin{pmatrix}
-	H_{11} & H_{12}\\
-	\\
-	H^{T}_{12} & H_{22} \\
-	\\
-	\end{pmatrix}	\begin{pmatrix}
-	cos(\theta) & -sin(\theta) & 0 & 0\\
-	sin(\theta) & cos(\theta) & 0 & 0\\
-	0 & 0 & cos(\phi) & -sin(\phi) \\
-	0 & 0 & sin(\phi) & cos(\phi)\\
-	\end{pmatrix}
-	\end{equation*}	
-	
-	This will give us a diagonal matrix $H$ where the diagonal values are the eigenvalues. 
-	\fi
-	
-	\subsection{Generalised Two Mode Cooling}\color{black}
+	\subsection{Generalised Two Mode Cooling}
 	\subsubsection{Drift and Diffusion Matrices}
 	\label{sec:optodefs}	
 
@@ -890,30 +853,42 @@
 	
 	From this, we can see that Eq. \ref{eq:37} holds under the conditions that $\chi_1 \geq \kappa_1$ and $\chi_2 \geq \kappa_2$.
 	
+	
+	\iffalse
 	chi and kappa are, respectively, the noise (in units of frequency) and loss rates. `an assumption one needs to make for the cooling scenario to make sense: you will need to couple your system of interest (say, mechanics) with an auxiliary system (say, light) that will be asymptotically cooler, and that cools fast enough, otherwise the best is likely to be doing nothing' $\chi_1, \chi_2, \kappa_1, \kappa_2$? Check what ch1,2 kappa1,2 actually are.
+	\fi
 	
-	
-	\color{red}\subsubsection{Method}\color{black}
+	\subsubsection{Method}
 	\label{sec:twomodegeneralmethod}	
+	
+	The method undertaken to investigate the generalised two mode case was a natural extension of the methods employed in the previous sections. A $4\times4$ lower triangular matrix, $L$, was used to generate arbitrary positive definite matrices, $LL^T$, in the Hamiltonian. The number of degrees of freedom scales quadratically and so, rather than charting cross-sections of the $\sigma$ sub-determinant, a table of optimised determinants was produced from which a model could be inferred. The parameters $\chi_1, \chi_2, \kappa_1$ and $\kappa_2$ were fixed within runs but varied across runs.
 
 	\subsubsection{Minimum Sub-Determinant}
-	We found that the minimum $2 \times 2$ top-left sub-determinant of the covariance matrix, $\sigma$, is given by $\Big(\dfrac{\chi_1 + \chi_2}{\kappa_1 + \kappa_2}\Big)^2$.  
+	Our analysis showed that the minimum $2 \times 2$ top-left sub-determinant of the covariance matrix, $\sigma$, is given by
 	
-	From \ref{sec:optodefs} we know that $\chi \geq \kappa$ implying $\Big(\dfrac{\chi_1 + \chi_2}{\kappa_1 + \kappa_2}\Big)^2 \geq 1$, as required for a physical system. 
+	\begin{equation}\label{eq:12345}
+	\sigma_\text{min} = \Big(\dfrac{\chi_1 + \chi_2}{\kappa_1 + \kappa_2}\Big)^2.
+	\end{equation}  
+	We note that this is fully consistent with our findings in Section \ref{sec:twomodesimplemin} by substituting $\chi_1=\chi_2=\chi$ and $\kappa_1=\kappa_2=1$ into Eq. \ref{eq:12345}. From \ref{sec:optodefs} we know that 
+	\begin{equation*}
+	\chi \geq \kappa \implies	\Big(\dfrac{\chi_1 + \chi_2}{\kappa_1 + \kappa_2}\Big)^2 \geq 1,
+	\end{equation*}
+	as required for a physical system. 
+	
+	Eq. \ref{eq:12345} was numerically verified for every valid combination of integers up to 20 (8,855 permutations in total). The search space was made as large as was feasibly possible (given computation runtime constraints) in an attempt to identify possible discrepancies from the stated relation --- no such discrepancies were observed. A statistical $R^2$ test was performed to compare the modelled and observed data points and a value of 0.999999999992 was found indicating a very high degree of accuracy between model and actual. A (truncated) tabulated set of results is shown in Appendix \ref{sec:twomodetable}.
 	
 	\subsubsection{Optimal Hamiltonian}
 	
-	In the limit that $N \rightarrow \infty$, the optimal cooling Hamiltonian is given by
+	By inspecting the form of the Hamiltonians that emerged from the optimiser, it was possible to identify the optimal Hamiltonian in the general case. These findings are not without some caveats, however, which we must now address. First, we have not ruled out the possibility that there exists some other form of $H$ that also matches our lower bound. Second, we have not completely discarded the possibility that our lower bound is the true bound. Instead, we simply point to our empirical findings that over thousands of trials (using multiple starting points), every result has agreed with our model to within 12 significant figures which is within the tolerance of our optimiser.
 	
+	Clearly, in the case that $\chi_1=\chi_2$ and $\kappa_1=\kappa_2=1$, we must reconcile our solution with the ones found in Section \ref{sec:twomode}. Indeed, it is possible to show that solution \ref{eq:45} still holds for $\kappa_1=\kappa_2\neq1$. However, in the general case that the $\chi$ and $\kappa$ values can vary among each mode, the optimiser would only converge for very large Hamiltonians; the optimal form of $H$ suggested by the optimiser was given by,
 	\begin{equation*}
 	H = N \begin{pmatrix}
 	1 & 1 \\
 	1 & 1\\
-	\end{pmatrix} \otimes \mathbb{I}_2.
+	\end{pmatrix} \otimes \mathbb{I}_2,
 	\end{equation*}
-
-	
-	The solution to the covariance matrix, $\sigma$, for finite $N$ is given by 
+	for very large $N$. We can derive a (sub-optimal) solution for $\sigma$ for finite $N$ and then verify that this form converges on our modelled $\sigma_\text{min}$ expression in the limit $N \rightarrow \infty$.	The solution to the covariance matrix, $\sigma$, for finite $N$ is given by 
 	
 	\begin{equation} \label{eq:44}
 	\sigma = \begin{pmatrix}
@@ -961,6 +936,9 @@
 	\end{pmatrix}
 	\end{align*}
 	
+	
+	Commented out multlined for the moment as it's killing my pdf 
+	\iffalse
 	\[
 	\begin{multlined}
 	= \left(\begin{matrix}
@@ -978,82 +956,15 @@
 	\end{matrix}\right)
 	\end{multlined}
 	\]   
+	\fi
 	
 	\begin{align*}
 	&= -D.&	
 	\end{align*}
 	
-	This is verified in Appendix \ref{sec:verifyappen}. In limit that $N \rightarrow \infty$ we first note that $\beta \rightarrow 1$. Then, inspecting terms $a$ and $b$ we see that $a \rightarrow \alpha$, $b \rightarrow \alpha$ and the determinant therefore converges on the minimum determinant $\alpha^2$.
+	This is verified in Appendix \ref{sec:verifyappen}. In limit that $N \rightarrow \infty$ we first note that $\beta \rightarrow 1$. Then, inspecting terms $a$ and $b$ we see that $a \rightarrow \alpha$, $b \rightarrow \alpha$ and the determinant therefore converges on the minimum determinant $\alpha^2=\Big(\dfrac{\chi_1 + \chi_2}{\kappa_1 + \kappa_2}\Big)^2$.
 	
-	Some analysis to try and show that this is a minimum.
 	
-	\iffalse
-
-	Solution
-	\begin{equation*}
-	\sigma = \begin{pmatrix}
-	\alpha & 0 & 0 & \epsilon\\
-	0 & \alpha & -\epsilon & 0\\
-	0 & -\epsilon & \alpha & 0 \\
-	\epsilon & 0 & 0 & \alpha\\
-	\end{pmatrix}
-	\end{equation*}	
-	where $\alpha = \Big(\dfrac{\chi_1 + \chi_2}{\kappa_1 + \kappa_2}\Big)$ and $\epsilon = \frac{\big(\frac{\chi_1 + \chi_2}{\kappa_1 + \kappa_2}\big) \frac{\kappa_1}{2} - \frac{\chi_1}{2}}{N} = \frac{\alpha \kappa_1 - \chi_1}{2N}$.
-	
-	\begin{align*}
-	&A\sigma +\sigma A^{T}&\\
-	&= \begin{pmatrix}
-	-\frac{\kappa_1}{2} & N & 0 & N\\
-	-N & -\frac{\kappa_1}{2} & -N & 0 \\
-	0 & N & -\frac{\kappa_2}{2} & N\\
-	-N & 0 & -N & -\frac{\kappa_2}{2}\\
-	\end{pmatrix}		\begin{pmatrix}
-	\alpha & 0 & 0 & \epsilon\\
-	0 & \alpha & -\epsilon & 0\\
-	0 & -\epsilon & \alpha & 0 \\
-	\epsilon & 0 & 0 & \alpha\\
-	\end{pmatrix} + \begin{pmatrix}
-	\alpha & 0 & 0 & \epsilon\\
-	0 & \alpha & -\epsilon & 0\\
-	0 & -\epsilon & \alpha & 0 \\
-	\epsilon & 0 & 0 & \alpha\\
-	\end{pmatrix}	\begin{pmatrix}
-	-\frac{\kappa_1}{2} & -N & 0 & -N\\
-	N & -\frac{\kappa_1}{2} & N & 0 \\
-	0 & -N & -\frac{\kappa_2}{2} & -N\\
-	N & 0 & N & -\frac{\kappa_2}{2}\\
-	\end{pmatrix}&\\
-	&= \begin{pmatrix}
-	2N \epsilon - \kappa_1 \alpha & 0 & 0 & -\frac{1}{2} \epsilon (\kappa_1 + \kappa_2)\\
-	0 & 2N \epsilon - \kappa_1 \alpha & -\frac{1}{2} \epsilon (\kappa_1 + \kappa_2) & 0 \\
-	0 & \frac{1}{2} \epsilon (\kappa_1 + \kappa_2) & -2N \epsilon - \kappa_2 \alpha & 0\\
-	\frac{1}{2} \epsilon (\kappa_1 + \kappa_2) & 0 & 0 & -2N \epsilon - \kappa_2 \alpha\\
-	\end{pmatrix}&\\
-	&= \begin{pmatrix}
-	-\chi_1 & 0 & 0 & \mathcal{O}(N^{-1})\\
-	0 & -\chi_1 & \mathcal{O}(N^{-1}) & 0 \\
-	0 & \mathcal{O}(N^{-1}) & -\chi_2 & 0\\
-	\mathcal{O}(N^{-1}) & 0 & 0 & -\chi_2\\
-	\end{pmatrix}&\\
-	&= -D& \tag*{so $\sigma$ is the steady state solution in the asymptotic limit.}
-	\end{align*}
-	
-	\subsection{Beam Splitter Hamiltonian}
-
-	
-	Then consider H of the form (Beamsplitter Hamiltonian):
-	\begin{equation*}
-	H = g\begin{pmatrix}
-	0 & 0 & 0 & -1\\
-	0 & 0 & 1 & 0\\
-	0 & 1 & 0 & 0 \\
-	-1 & 0 & 0 & 0 \\
-	\end{pmatrix}
-	\end{equation*} where $g$ is the Hamiltonian strength (interaction strength?). Is this optimal form? NO.
-	
-	What value of $g$ gives you the minimum determinant of $\sigma$. Is there a formula that will give us the best g, for your given chi and kappa values. 
-	\fi	
-
 	\color{red}\section{Conclusion}
 	\label{sec:conc}
 	
@@ -1062,7 +973,7 @@
 
 	\begin{appendices}
 	
-	\section{The two mode cooling general solution}
+	\section{The Two Mode Cooling General Solution}
 	\label{sec:verifyappen}
 	
 	We can verify that Eq. \ref{eq:44} satisfies the steady state diffusion equation with drift and diffusion matrices as described in \ref{sec:optodefs}.
