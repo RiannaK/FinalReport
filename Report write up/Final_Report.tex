@@ -35,30 +35,34 @@
 			
 			\vfill
 			
-			A thesis presented for...\\
-			...
+			A thesis submitted in partial fulfilment\\
+			of the requirements for the degree of\\
+			MSc Quantum Technologies
 			
-			\vspace{0.8cm}
+			\vspace{1cm}
 			
 			Department of Physics and Astronomy\\
 			University College London\\
 			August 2017
 			
-			\vspace{0.5\textheight}
+			\vspace{0.25\textheight}
+			
 			
 		\end{center}
 	\end{titlepage}
 
 	\begin{abstract}
 		
-	We examine the steady state diffusion equation with the aim of deriving the Hamiltonian that achieves the lowest entropy and thus maximal cooling for a given configuration. We consider both the one and two mode cases with the latter case playing an important role in the field of optomechanics [THINK HERE]. We present an analytical proof of the lower bound on the determinant of the covariance matrix, $\sigma$, in the one mode case and verify our findings numerically. In the two mode case, we propose a lower bound on the $2 \times 2$ sub determinant and verify the hypothesis numerically.
+	We examine the steady state diffusion equation with the aim of deriving the Hamiltonian that achieves the lowest entropy and thus maximal cooling for a given configuration. We consider both the one and two mode cases with the latter case playing an important role in the field of optomechanics and non-classical properties such as entanglement. We present an analytical proof of the lower bound on the determinant of the covariance matrix, $\sigma$, in the one mode case and verify our findings numerically. In the two mode case, we propose a lower bound on the $2 \times 2$ sub determinant and verify the hypothesis numerically. DON'T I WANT TO TALK ABOUT THE HAMILTONIANS, I KNOW THE AIM WAS TO LOWER THE DET BUT DIDN'T I DO THAT BY FINDING THE OPTIMAL HAMILTONIAN?
+	
+	\end{abstract}
 		
 	\tableofcontents
 	\listoffigures
 
 	\newpage
 		
-	\color{red}\section{Introduction}
+	\section{Introduction}
 	
 	
 	In the conclusions and intro, I recommend you to stress the main results: the analytical proof that H=0 is the best one can do for one mode, and the numerical finding about the minimum local determinant for two modes.
@@ -66,7 +70,7 @@
 	
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus sem, ornare in commodo venenatis, pellentesque eget eros. Praesent at laoreet leo. Aliquam vitae elit eu tortor malesuada luctus at non lectus. Ut dapibus quis est nec facilisis. Phasellus et vehicula tellus. Suspendisse ut fringilla tortor. Aenean convallis hendrerit maximus. Ut aliquet purus in eros tincidunt, aliquet semper quam gravida. Donec nec augue quis eros malesuada scelerisque et non neque. Curabitur et orci consequat, vehicula neque vitae, facilisis mauris. Aliquam nec interdum dui. Nam fermentum sem lorem, eu condimentum ex bibendum a. Aliquam eu scelerisque magna, vitae feugiat orci. Nunc.
 	
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus sem, ornare in commodo venenatis, pellentesque eget eros. Praesent at laoreet leo. Aliquam vitae elit eu tortor malesuada luctus at non lectus. Ut dapibus quis est nec facilisis. Phasellus et vehicula tellus. Suspendisse ut fringilla tortor. Aenean convallis hendrerit maximus. Ut aliquet purus in eros tincidunt, aliquet semper quam gravida. Donec nec augue quis eros malesuada scelerisque et non neque. Curabitur et orci consequat, vehicula neque vitae, facilisis mauris. Aliquam nec interdum dui. Nam fermentum sem lorem, eu condimentum ex bibendum a. Aliquam eu scelerisque magna, vitae feugiat orci. Nunc.\color{black}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus sem, ornare in commodo venenatis, pellentesque eget eros. Praesent at laoreet leo. Aliquam vitae elit eu tortor malesuada luctus at non lectus. Ut dapibus quis est nec facilisis. Phasellus et vehicula tellus. Suspendisse ut fringilla tortor. Aenean convallis hendrerit maximus. Ut aliquet purus in eros tincidunt, aliquet semper quam gravida. Donec nec augue quis eros malesuada scelerisque et non neque. Curabitur et orci consequat, vehicula neque vitae, facilisis mauris. Aliquam nec interdum dui. Nam fermentum sem lorem, eu condimentum ex bibendum a. Aliquam eu scelerisque magna, vitae feugiat orci. Nunc.
 	
 	
 	\subsection{The Density Operator}
@@ -105,7 +109,7 @@
 	
 	\subsection{Discrete Variable Systems}
 
-	\color{red}AS says to remove this section \color{black}Our focus in this report is on CV systems. Before discussing those, however, it is worth briefly noting that discrete variable systems exist and arise frequently in quantum mechanics. As the name suggests, discrete variable systems are ones in which the possible outcomes of a measurement are discrete (or quantised). This manifests itself mathematically via operators whose eigenvalues are discrete. If, in addition to being discrete, the eigenvalues form a finite set, the system can be handled using matrix vector methods. There are numerous examples of discrete variable systems such as \color{red} the energy levels of a quantum harmonic oscillator (infinite dimensional Hilbert space) or \color{black}the spin of an electron (two dimensional Hilbert space).
+	Our focus in this report is on CV systems. Before discussing those, however, it is worth briefly noting that discrete variable systems exist and arise frequently in quantum mechanics. As the name suggests, discrete variable systems are ones in which the possible outcomes of a measurement are discrete (or quantised). This manifests itself mathematically via operators whose eigenvalues are discrete. If, in addition to being discrete, the eigenvalues form a finite set, the system can be handled using matrix vector methods. There are numerous examples of discrete variable systems such as the energy levels of a quantum harmonic oscillator (infinite dimensional Hilbert space) or the spin of an electron (two dimensional Hilbert space).
 	
 	\fi
 	
@@ -194,7 +198,7 @@
 	\hat{\rho} = \frac{1}{(2\pi)^n} \int \chi_\rho(\mathbf{r})\hat{D}_\textbf{r}  d\textbf{r} = \frac{1}{(2\pi)^n} \int \Tr[\hat{D}_\textbf{r}^\dagger \hat{\rho}]\hat{D}_\textbf{r}  d\textbf{r}.
 	\end{equation} 
 	
-	\begin{figure}
+	\begin{figure} [h]
 		\centering
 		\includegraphics[scale = 1]{RKPOINT}
 		\caption[Action of the displacement operator]{The displacement operator, $\hat{D}_\mathbf{r}$, shifts the state of the system in phase space.}
@@ -203,7 +207,7 @@
 	
 	The action of this is shown in Figure \ref{fig:RKDENSITY}. We refer to $\chi_\rho$ as the characteristic function and, for every quantum state, $\hat{\rho}$, a corresponding characteristic function, $\chi_\rho$, exists \cite{Hillery84}. The characteristic function of the density operator is crucial to the definition of a Gaussian state, which is a key focus of this paper.
 	
-	\begin{figure}
+	\begin{figure} [h]
 		\centering
 		\includegraphics[scale = 1]{RKDENSITY}
 		\caption[A Gaussian State representation]{The state of the system can be represented as a linear combination of displacement operators whose amplitude is modulated by the characteristic function.}
@@ -388,7 +392,7 @@
 	
 	Hence, as required, we arrive at
 	\begin{equation*}
-	\frac{d \mathbf{\hat{r}}}{d t} = \Omega H \mathbf{\hat{r}}
+	\frac{d \mathbf{\hat{r}}}{d t} = \Omega H \mathbf{\hat{r}} .
 	\tag*{\rule{2mm}{2mm}}
 	\end{equation*}
 	
@@ -449,11 +453,11 @@
 	\section{The Optimal Cooling Hamiltonian}
 	
 	\subsection{Motivation}
-	The entropy of the system, $S$, is determined by the covariance matrix, $\sigma$, and the purity, $\gamma$, is given by $1-S$. Our ultimate goal is to achieve low entropy, pure states as these are essential to the development of quantum technologies such as quantum computing [REF]. To achieve a low entropy system, we use cooling -- a process that drains the entropy from a system by removing heat -- thus increasing the overall purity.
+	The entropy of the system, $S$, is determined by the covariance matrix, $\sigma$, and the purity, $\gamma$, is given by $1-S$ \cite{Genoni16}. Our ultimate goal is to achieve low entropy, pure states as these are essential to the development of quantum technologies such as quantum computing \cite{Chuang}. To achieve a low entropy system, we use cooling -- a process that drains the entropy from a system by removing heat -- thus increasing the overall purity.
 	
-	The entropy of the state is determined by the determinant of $\sigma$. Hence, the problem of finding the minimum entropy of a system is equivalent to finding a system that yields the smallest possible determinant. This investigation aims to find the minimum determinant of $\sigma$ by varying the Hamiltonian. For the sake of brevity, we shall refer to the minimum determinant of $\sigma$ as $\sigma_\text{min}$ throughout this report. Our motivation to vary the Hamiltonian stems from real-world considerations; in practice, it is hard to control (or minimise) the external factors that feed into the steady state diffusion equation (such as noise and dissipation) but it is feasible that we can control the form of the Hamiltonian. The optimal cooling Hamiltonian is therefore taken to be the one which, when considered within the definition of $A$ as shown in \ref{eq:36}, provides $\sigma_\text{min}$. 
+	The entropy of the state is determined by the determinant of $\sigma$ \cite{Genoni16}. Hence, the problem of finding the minimum entropy of a system is equivalent to finding a system that yields the smallest possible determinant. This investigation aims to find the minimum determinant of $\sigma$ by varying the Hamiltonian. For the sake of brevity, we shall refer to the minimum determinant of $\sigma$ as $\sigma_\text{min}$ throughout this report. Our motivation to vary the Hamiltonian stems from real-world considerations; in practice, it is hard to control (or minimise) the external factors that feed into the steady state diffusion equation (such as noise and dissipation) but it is feasible that we can control the form of the Hamiltonian. The optimal cooling Hamiltonian is therefore taken to be the one which, when considered within the definition of $A$ as shown in \ref{eq:36}, provides $\sigma_\text{min}$. 
 	
-	The work within this thesis is limited to quadratic Hamiltonians of the form described by \ref{eq:22}. Reducing the scope in this way is not a major limitation, however, as most noise (and other interaction terms) involve quadratic Hamiltonians [REF] and this formalism applies to a range of platforms including optomechanics, quantum light and trapped ions to name only a few \cite{Serafini17}. 
+	The work within this thesis is limited to quadratic Hamiltonians of the form described by \ref{eq:22}. Reducing the scope in this way is not a major limitation, however, as most noise (and other interaction terms) involve quadratic Hamiltonians and this formalism applies to a range of platforms including optomechanics, quantum light and trapped ions to name only a few \cite{Serafini17}. 
 	
 	\subsection{The Steady State Covariance Matrix}
 	\label{sec:sigmasolve}
@@ -469,13 +473,13 @@
 	-(\mathbb{I} \otimes A + A \otimes \mathbb{I})^{-1}\Vect{(D)} &= \Vect{(\sigma)}.&
 	\end{align}
 	The covariance matrix, $\sigma$, can then be found by reshaping.
-	Here, $\Vect(X)$ refers to the vectorisation of an $m \times n$ matrix X and is given by
+	Here, $\Vect(X)$ refers to the vectorisation of an $m \times n$ matrix X with
 	\begin{equation*}
 	\Vect(X)= (x_{11}, ..., x_{m1}, x_{12}, ..., x_{m2}, ..., x_{1n}, ..., x_{mn})^T ,
 	\end{equation*}
 	and line $(*)$ uses the fact that $\Vect{(AB)}=(\mathbb{I} \otimes A)\Vect{(B)}=(B^{T} \otimes \mathbb{I})\Vect{(A)}.$
 
-	In this report, we address the issue of finding the optimal cooling Hamiltonian under various regimes (of increasing complexity). We first consider $\sigma_\text{min}$ in the one mode case where there is one degree of freedom such as a light mode. We then consider two variations on the minimum determinant of the top left $2 \times 2$ partition for $\sigma$ in the two mode case where we have an additional degree of freedom. For example within optomechanics, this additional mode would be a mechanical mode that is coupled to the light mode to form a composite system \cite{Aspelmeyer}. This has applications to the generation of macroscopic superposition \cite{Hoff} which, itself, has applications to quantum metrology \cite{Giovannetti}. These areas are at the centre of many of the biggest debates exploring the foundational aspects of quantum mechanics and gravity \cite{Pikovski} and therefore motivate this study.	
+	In this report, we address the issue of finding the optimal cooling Hamiltonian under various regimes (of increasing complexity). We first consider $\sigma_\text{min}$ in the one mode case where there is one degree of freedom such as a light mode. We then consider two variations on the minimum determinant of the top left $2 \times 2$ partition for $\sigma$ in the two mode case where we have an additional degree of freedom. For example within optomechanics, this additional mode would be a mechanical mode that is coupled to the light mode to form a combined system \cite{Aspelmeyer}. This has applications to the generation of macroscopic superposition \cite{Hoff} which, itself, is at the centre of many of the biggest debates exploring the foundational aspects of quantum mechanics and gravity \cite{Pikovski}, and therefore motivate this study.	
 	
 	\subsection{The One Mode Case}
 	\label{sec:onemode}
@@ -549,7 +553,7 @@
 	
 	Numerical optimisation revealed that $\sigma_\text{min}$ is given by $\chi^{2}$. An analytical proof of this will be provided at the end of the section, however this relation was also numerically verified to 16 significant figures (machine precision) for the first 20 integers. A tabulated set of results is shown in Appendix \ref{sec:onemodetable}. A log-log plot of $\sigma_\text{min}$ against $\chi$ therefore yielded a gradient of 2 and an $R^2$ value of exactly 1, as shown in Figure \ref{fig:OneModePlot}.
 	
-	\begin{figure}
+	\begin{figure} [h]
 		\centering
 		\includegraphics[scale = 0.4]{OneModePlot2}
 		\caption[One mode case: log-log plot of $\sigma_\text{min}$ against $\chi^2$]{Log-log plot of $\sigma_\text{min}$ against $\chi^2$ in the one-mode case.}
@@ -591,61 +595,8 @@
 	0 = A \frac{\sigma}{\chi} + \frac{\sigma}{\chi} A^T + \mathbb{I}.
 	\end{equation*}
 	
-	Here $\frac{\sigma}{\chi}$ is a steady state solution to the linear equation, and represents a physical state. We must therefore have that $\det\frac{\sigma}{\chi} \geq \mathbb{I}$ \cite{Adesso14}, resulting in $\det \sigma \geq \chi^2$. This provides an upper bound on $\sigma_\text{min}$ which can certainly be matched in the trivial case of $H=0$. We can, therefore, conclude that $\sigma_\text{min}$, must be $\det \sigma = \chi^2$.
+	Here $\frac{\sigma}{\chi}$ is a steady state solution to the linear equation, and represents a physical state. We must therefore have that $\det\frac{\sigma}{\chi} \geq \mathbb{I}$ \cite{Adesso14}, resulting in $\det \sigma \geq \chi^2$. This provides an upper bound on $\sigma_\text{min}$ which can certainly be matched in the trivial case of $H=0$. We can, therefore, conclude that $\sigma_\text{min}(\chi)=\chi^{2}$. 
 
-	
-	\iffalse
-	\subsection{A Squeezed state}
-	\subsubsection{Drift and Diffusion Matrices}
-	Having established the optimal Hamiltonian in the simplest one mode case, we now turn our attention to the diffusion matrix that represents a squeezed state. A squeezed state is a non-classical state of light that \color{blue} check definition \color{black}
-	
-	In this case, the drift matrix is identical to the one described in Section \ref{sec:onemodedefs} but the diffusion matrix, $D$, is modified to be of the form
-	\begin{align*}
-	A &= A_0 + \Omega H \quad\text{where}\quad A_0 = -\frac{1}{2}\mathbb{I}&\\
-	D &= \begin{pmatrix}
-	z & 0  \\
-	0 & \frac{1}{z}\\
-	\end{pmatrix} \quad\text{where $z$ is varied with the constraint $z>1$ FIND REF}.&
-	\end{align*} 
-	
-	Again, we follow the process set out in Section \ref{sec:onemodedefs} to find the conditions under which  the eigenvalues are positive. We first expand Eq. \ref{eq:37} as follows
-	\begin{align*}
-	\begin{pmatrix}
-	z & 0  \\
-	0 & \frac{1}{z}\\
-	\end{pmatrix} + i\begin{pmatrix}
-	\frac{1}{2} & 0  \\
-	0 & \frac{1}{2} \\
-	\end{pmatrix}\begin{pmatrix}
-	0 & 1  \\
-	-1 & 0 \\
-	\end{pmatrix} + i\begin{pmatrix}
-	0 & 1  \\
-	-1 & 0 \\
-	\end{pmatrix}\begin{pmatrix}
-	\frac{1}{2} & 0  \\
-	0 & \frac{1}{2} \\
-	\end{pmatrix}=
-	\begin{pmatrix}
-	z & i  \\
-	-i & \frac{1}{z} \\
-	\end{pmatrix},
-	\end{align*}
-	and then compute eigenvalues to ensure the positive-semidefiniteness of the matrix. Eigenvalue anaylsis reveals that both eigenvalues are positive
-	\begin{align*}
-	&(z- \lambda)(\frac{1}{z} - \lambda) - 1 = 0&\\
-	&\lambda(\lambda - (z+ \frac{1}{z})) = 0&\\
-	&\lambda = 0\quad\text{or}\quad\lambda= z+ \frac{1}{z}&
-	\end{align*}
-	Therefore, the eigenvalues are positive if and only if $z > 1$ \color{red}Does z have to be an integer?
-	 		
-	\subsubsection{Method}\color{black}
-	
-	To investigate the case of a squeezed state, the Python code was modified to account for the additional degree of freedom afforded by the diffusion matrix. A multivariable optimisation was performed over four variables $(a, b, c, z)$ subject to the single linear constraint that $z>1$.
-	
-	\subsubsection{Minimum Determinant}
-	CHECK
-	\fi 
 	
 	\subsection{The Two Mode Case}
 	\label{sec:twomode}
@@ -657,7 +608,7 @@
 	-1 & 0 & 0 & 0\\
 	0 & 0 & 0 & 1\\
 	0 & 0 & -1 & 0\\
-	\end{pmatrix} &\\
+	\end{pmatrix}, &\\
 	D &= \chi \mathbb{I}_4 .&
 	\end{align*}
 	
@@ -702,7 +653,7 @@
 	\begin{align*}
     &((\chi-\lambda)^2 - 1)^2=0&\\
         &\lambda-\chi=\pm1&\\
-	&\lambda = \chi \pm 1&
+	&\lambda = \chi \pm 1,&
 	\end{align*}
 	and thus $\chi \geq 1$ to ensure that the eigenvalues are positive.
 	
@@ -714,7 +665,7 @@
 	
 	Our numerical analysis again revealed that the relation between $\sigma_\text{min}$ and $\chi$ is given by $\sigma_\text{min}(\chi)=\chi^{2}$. A tabulated set of results is shown in Appendix \ref{sec:twomodetablesimple} and a log-log plot of $\sigma_\text{min}$ against $\chi$ shows this relation in Figure \ref{fig:TwoModePlot}. It is noted that in some cases, the agreement between model and observation was only found accurate to 13 significant figures. While machine precision is generally accurate to 16, some floating point errors are inevitable in matrix operations and, in any case, the observed solution agrees with the model to within the tolerance of the optimiser.
 	
-	\begin{figure}
+	\begin{figure} [h]
 		\centering
 		\includegraphics[scale = 0.4]{OneModePlot2}
 		\caption[Two mode case: log-log plot of $\sigma_\text{min}$ against $\chi^2$]{Log-log plot of $\sigma_\text{min}$ against $\chi^2$ in the two-mode case.}
@@ -848,7 +799,7 @@
 	
 	\begin{align*}
 	&[(\chi_1- \lambda)^2 - \kappa_1^2][(\chi_2- \lambda)^2 - \kappa_2^2]=0&\\
-	&\lambda=\chi_1\pm\kappa_1 \quad\text{and}\quad \lambda=\chi_2\pm\kappa_2&
+	&\lambda=\chi_1\pm\kappa_1 \quad\text{and}\quad \lambda=\chi_2\pm\kappa_2 .&
 	\end{align*}
 	
 	From this, we can see that Eq. \ref{eq:37} holds under the conditions that $\chi_1 \geq \kappa_1$ and $\chi_2 \geq \kappa_2$.
@@ -965,43 +916,12 @@
 	This is verified in Appendix \ref{sec:verifyappen}. In limit that $N \rightarrow \infty$ we first note that $\beta \rightarrow 1$. Then, inspecting terms $a$ and $b$ we see that $a \rightarrow \alpha$, $b \rightarrow \alpha$ and the determinant therefore converges on the minimum determinant $\alpha^2=\Big(\dfrac{\chi_1 + \chi_2}{\kappa_1 + \kappa_2}\Big)^2$.
 	
 	
-	\color{red}\section{Conclusion}
+	\section{Conclusion}
 	\label{sec:conc}
 	
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus sem, ornare in commodo venenatis, pellentesque eget eros. Praesent at laoreet leo. Aliquam vitae elit eu tortor malesuada luctus at non lectus. Ut dapibus quis est nec facilisis. Phasellus et vehicula tellus. Suspendisse ut fringilla tortor. Aenean convallis hendrerit maximus. Ut aliquet purus in eros tincidunt, aliquet semper quam gravida. Donec nec augue quis eros malesuada scelerisque et non neque. Curabitur et orci consequat, vehicula neque vitae, facilisis mauris. Aliquam nec interdum dui. Nam fermentum sem lorem, eu condimentum ex bibendum a. Aliquam eu scelerisque magna, vitae feugiat orci. Nunc.
-	\color{black}
+	We have 
 
 	\begin{appendices}
-	
-	\section{The Two Mode Cooling General Solution}
-	\label{sec:verifyappen}
-	
-	We can verify that Eq. \ref{eq:44} satisfies the steady state diffusion equation with drift and diffusion matrices as described in \ref{sec:optodefs}.
-	
-	To verify this, first we show that the anti-diagonal terms are zero. Evaluating $\frac{1}{2}(\kappa_1 + \kappa_2)c$ and $N(b-a)$ separately
-	\begin{align*}
-	&\frac{1}{2}(\kappa_1 + \kappa_2) c = \frac{1}{2}(\kappa_1 + \kappa_2) \cdot \frac{\chi_1 \kappa_2 - \kappa_1 \chi_2}{2N\beta (\kappa_1+\kappa_2)} = \frac{1}{4N\beta}(\chi_1 \kappa_2 - \kappa_1 \chi_2),&\\
-	&N(b-a)= N \Big(\frac{\alpha + \frac{\chi_2 \kappa_1}{4N^2}}{\beta} -\frac{\alpha + \frac{\chi_1 \kappa_2}{4N^2}}{\beta}\Big) = \frac{1}{4N\beta}(\chi_2 \kappa_1 - \chi_1 \kappa_2),&\\
-	&\text{gives}\quad\frac{1}{2}(\kappa_1 + \kappa_2)c + N(b-a) = 0\text{ as required.}&
-	\end{align*}
-	
-	Then, evaluating the diagonal terms $-\kappa_1 a - 2Nc$ and $-\kappa_2 b + 2Nc$
-	
-	\begin{align*}
-	-\kappa_1 a - 2Nc &= \frac{-\kappa_1}{\beta} \Big(\alpha + \frac{\chi_1 \kappa_2}{4N^2} \Big) - \frac{\chi_1 \kappa_2 - \kappa_1 \chi_2}{\beta (\kappa_1+\kappa_2)}&\\
-	&= \frac{-\kappa_1 (\kappa_1+\kappa_2) \Big(\alpha + \frac{\chi_1 \kappa_2}{4N^2} \Big) - \chi_1 \kappa_2 - \kappa_1 \chi_2}{\beta (\kappa_1+\kappa_2)}&\\
-	&= \frac{-\chi_1(\kappa_1+\kappa_2)- (\kappa_1+\kappa_2)\chi_1 \frac{\kappa_1 \kappa_2}{4N^2}}{\beta (\kappa_1+\kappa_2)}&\\
-	&= -\chi_1 \frac{\beta}{\beta}&\\
-	&= -\chi_1&
-	\end{align*}
-	
-	\begin{align*}
-	-\kappa_2 b + 2Nc &= \frac{-\kappa_2}{\beta} \Big(\alpha + \frac{\chi_2 \kappa_1}{4N^2} \Big) + \frac{\chi_1 \kappa_2 - \kappa_1 \chi_2}{\beta (\kappa_1+\kappa_2)}&\\
-	&= \frac{-\kappa_2 (\kappa_1+\kappa_2) \Big(\alpha + \frac{\chi_2 \kappa_1}{4N^2} \Big) + \chi_1 \kappa_2 - \kappa_1 \chi_2}{\beta (\kappa_1+\kappa_2)}&\\
-	&= \frac{-\chi_2(\kappa_1+\kappa_2)- (\kappa_1+\kappa_2)\chi_2 \frac{\kappa_1 \kappa_2}{4N^2}}{\beta (\kappa_1+\kappa_2)}&\\
-	&= -\chi_2 \frac{\beta}{\beta}&\\
-	&= - \chi_2&
-	\end{align*}
 	
 	\section{Optimisation Results} 
 	\subsection{The One Mode Case}
@@ -1108,9 +1028,40 @@
 			\hline
 		\end{tabular}
 	\end{center}
+		\section{The Two Mode Cooling General Solution}
+	\label{sec:verifyappen}
+	
+	We can verify that Eq. \ref{eq:44} satisfies the steady state diffusion equation with drift and diffusion matrices as described in \ref{sec:optodefs}.
+	
+	To verify this, first we show that the anti-diagonal terms are zero. Evaluating $\frac{1}{2}(\kappa_1 + \kappa_2)c$ and $N(b-a)$ separately
+	\begin{align*}
+	&\frac{1}{2}(\kappa_1 + \kappa_2) c = \frac{1}{2}(\kappa_1 + \kappa_2) \cdot \frac{\chi_1 \kappa_2 - \kappa_1 \chi_2}{2N\beta (\kappa_1+\kappa_2)} = \frac{1}{4N\beta}(\chi_1 \kappa_2 - \kappa_1 \chi_2),&\\
+	&N(b-a)= N \Big(\frac{\alpha + \frac{\chi_2 \kappa_1}{4N^2}}{\beta} -\frac{\alpha + \frac{\chi_1 \kappa_2}{4N^2}}{\beta}\Big) = \frac{1}{4N\beta}(\chi_2 \kappa_1 - \chi_1 \kappa_2),&\\
+	&\text{gives}\quad\frac{1}{2}(\kappa_1 + \kappa_2)c + N(b-a) = 0\text{ as required.}&
+	\end{align*}
+	
+	Then, evaluating the diagonal terms $-\kappa_1 a - 2Nc$ and $-\kappa_2 b + 2Nc$
+	
+	\begin{align*}
+	-\kappa_1 a - 2Nc &= \frac{-\kappa_1}{\beta} \Big(\alpha + \frac{\chi_1 \kappa_2}{4N^2} \Big) - \frac{\chi_1 \kappa_2 - \kappa_1 \chi_2}{\beta (\kappa_1+\kappa_2)}&\\
+	&= \frac{-\kappa_1 (\kappa_1+\kappa_2) \Big(\alpha + \frac{\chi_1 \kappa_2}{4N^2} \Big) - \chi_1 \kappa_2 - \kappa_1 \chi_2}{\beta (\kappa_1+\kappa_2)}&\\
+	&= \frac{-\chi_1(\kappa_1+\kappa_2)- (\kappa_1+\kappa_2)\chi_1 \frac{\kappa_1 \kappa_2}{4N^2}}{\beta (\kappa_1+\kappa_2)}&\\
+	&= -\chi_1 \frac{\beta}{\beta}&\\
+	&= -\chi_1&
+	\end{align*}
+	
+	\begin{align*}
+	-\kappa_2 b + 2Nc &= \frac{-\kappa_2}{\beta} \Big(\alpha + \frac{\chi_2 \kappa_1}{4N^2} \Big) + \frac{\chi_1 \kappa_2 - \kappa_1 \chi_2}{\beta (\kappa_1+\kappa_2)}&\\
+	&= \frac{-\kappa_2 (\kappa_1+\kappa_2) \Big(\alpha + \frac{\chi_2 \kappa_1}{4N^2} \Big) + \chi_1 \kappa_2 - \kappa_1 \chi_2}{\beta (\kappa_1+\kappa_2)}&\\
+	&= \frac{-\chi_2(\kappa_1+\kappa_2)- (\kappa_1+\kappa_2)\chi_2 \frac{\kappa_1 \kappa_2}{4N^2}}{\beta (\kappa_1+\kappa_2)}&\\
+	&= -\chi_2 \frac{\beta}{\beta}&\\
+	&= - \chi_2&
+	\end{align*}
+
 	
 	\end{appendices}
-		
+	
+	\newpage
 	\bibliography{bibl_file}
 	\bibliographystyle{ieeetr}
 	

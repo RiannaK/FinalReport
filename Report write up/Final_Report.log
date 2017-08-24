@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.14)  23 AUG 2017 08:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.14)  24 AUG 2017 14:11
 entering extended mode
 **./Final_Report.tex
 (Final_Report.tex
@@ -1439,11 +1439,11 @@ LaTeX Info: Redefining \nameref on input line 24.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+LaTeX Font Info:    Try loading font information for U+msa on input line 56.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+LaTeX Font Info:    Try loading font information for U+msb on input line 56.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1451,7 +1451,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 ...imal Hamiltonian}{23}{subsubsection.5.5.4}
+l.24 ... Sub-Determinant}{20}{subsubsection.5.4.3}
                                                    [1])
 \tf@toc=\write4
 \openout4 = `Final_Report.toc'.
@@ -1461,123 +1461,123 @@ l.30 ...imal Hamiltonian}{23}{subsubsection.5.5.4}
 \openout5 = `Final_Report.lof'.
 
 
-[2] [3] [4] [5] <RKPOINT.pdf, id=257, 208.39774pt x 197.19273pt>
+[2] [3]
+Overfull \hbox (3.371pt too wide) in paragraph at lines 88--89
+[]\OT1/cmr/m/n/10.95 From our def-i-ni-tion []1.1[], it fol-lows that the den-s
+ity ma-trix is both positive-semidefinite, 
+ []
+
+[4] [5] <RKPOINT.pdf, id=257, 208.39774pt x 197.19273pt>
 File: RKPOINT.pdf Graphic file (type pdf)
-
-<use RKPOINT.pdf>
-Package pdftex.def Info: RKPOINT.pdf used on input line 199.
+ <use RKPOINT.pdf>
+Package pdftex.def Info: RKPOINT.pdf used on input line 203.
 (pdftex.def)             Requested size: 208.39722pt x 197.19223pt.
- <RKDENSITY.pdf, id=260, 234.14384pt x 200.73624pt>
-File: RKDENSITY.pdf Graphic file (type pdf)
 
-<use RKDENSITY.pdf>
-Package pdftex.def Info: RKDENSITY.pdf used on input line 208.
+[6] <RKDENSITY.pdf, id=273, 234.14384pt x 200.73624pt>
+File: RKDENSITY.pdf Graphic file (type pdf)
+ <use RKDENSITY.pdf>
+Package pdftex.def Info: RKDENSITY.pdf used on input line 212.
 (pdftex.def)             Requested size: 234.14326pt x 200.73573pt.
- [6] [7 <./RKPOINT.pdf> <./RKDENSITY.pdf
+
+[7 <./RKPOINT.pdf> <./RKDENSITY.pdf
 
 pdfTeX warning: pdflatex (file ./RKDENSITY.pdf): PDF inclusion: multiple pdfs w
 ith page group included in a single page
->] [8]
-Overfull \hbox (5.55032pt too wide) detected at line 301
-\OML/cmm/m/it/10 S[]\OT1/cmr/m/n/10 
-\OML/cmm/m/it/10 S[] \OT1/cmr/m/n/10 = [] [] [] = [] = [] = 
-\OML/cmm/m/it/10 :
+>] [8] [9]
+Overfull \hbox (10.58267pt too wide) in paragraph at lines 320--321
+\OT1/cmr/m/n/10.95 sym-plec-tic eigen-val-ues can also be cal-cu-lated by con-s
+id-er-ing the (stan-dard, non-symplectic)
  []
 
-[9]
-Overfull \hbox (45.70633pt too wide) detected at line 336
-\OML/cmm/m/it/10  \OT1/cmr/m/n/10 = [] = []  []\OML/cmm/m/it/10 :
+
+Overfull \hbox (25.67252pt too wide) detected at line 340
+\OML/cmm/m/it/10.95  \OT1/cmr/m/n/10.95 = [] = []  []\OML/cmm/m/it/10.95 :
  []
 
 [10] [11] [12] [13] [14] [15]
-<OneModePlot2.png, id=461, 826.88925pt x 591.4095pt>
+Overfull \hbox (1.04437pt too wide) in paragraph at lines 550--551
+\OT1/cmr/m/n/10.95 plete-ness, the code is avail-able on GitHub []$\OT1/cmtt/m/
+n/10.95 https : / / github . com / RiannaK / FinalReport$[]\OT1/cmr/m/n/10.95 .
+
+ []
+
+<OneModePlot2.png, id=458, 826.88925pt x 591.4095pt>
 File: OneModePlot2.png Graphic file (type png)
  <use OneModePlot2.png>
-Package pdftex.def Info: OneModePlot2.png used on input line 554.
+Package pdftex.def Info: OneModePlot2.png used on input line 558.
 (pdftex.def)             Requested size: 330.74985pt x 236.5596pt.
 
-<OneModeGlobalMinima.png, id=464, 882.4167pt x 665.6067pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<OneModeGlobalMinima.png, id=461, 882.4167pt x 665.6067pt>
 File: OneModeGlobalMinima.png Graphic file (type png)
 
 <use OneModeGlobalMinima.png>
-Package pdftex.def Info: OneModeGlobalMinima.png used on input line 563.
+Package pdftex.def Info: OneModeGlobalMinima.png used on input line 567.
 (pdftex.def)             Requested size: 441.20728pt x 332.80254pt.
 
-Overfull \hbox (24.37439pt too wide) in paragraph at lines 563--564
+Overfull \hbox (24.37439pt too wide) in paragraph at lines 567--568
  [][] 
  []
 
-[16 <./OneModePlot2.png>] [17 <./OneModeGlobalMinima.png>] [18]
-Overfull \hbox (14.38379pt too wide) in paragraph at lines 699--699
+[16] [17 <./OneModePlot2.png>] [18 <./OneModeGlobalMinima.png>]
+Overfull \hbox (39.69331pt too wide) in paragraph at lines 650--650
 [] 
  []
 
+[19]
 File: OneModePlot2.png Graphic file (type png)
-<use OneModePlot2.png>
-Package pdftex.def Info: OneModePlot2.png used on input line 719.
+ <use OneModePlot2.png>
+Package pdftex.def Info: OneModePlot2.png used on input line 670.
 (pdftex.def)             Requested size: 330.74985pt x 236.5596pt.
- [19] [20] [21] [22]
-Overfull \hbox (31.1481pt too wide) in paragraph at lines 937--937
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20] [21] [22] [23] [24]
+Overfull \hbox (56.85004pt too wide) in paragraph at lines 888--888
 [] 
  []
 
-[23] [24] [25] [26] [27] (Final_Report.bbl [28] [29])
-
-! LaTeX Error: \begin{abstract} on input line 52 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1118 \end{document}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1118.
-[30]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1118.
+[25] [26] [27] [28] [29] (Final_Report.bbl [30])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1069.
+ [31]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1069.
  (Final_Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1118.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1118.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1069.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1069.
 
 Package rerunfilecheck Info: File `Final_Report.out' has not changed.
-(rerunfilecheck)             Checksum: B2B996BA47277696ACE80879289215E5;2570.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1118.
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 52 (\begingroup)
-### bottom level 
+(rerunfilecheck)             Checksum: E500333A051FF27976B9C75BBA6C64BD;2570.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1069.
+ ) 
 Here is how much of TeX's memory you used:
- 15249 strings out of 493333
- 260780 string characters out of 3139190
- 341374 words of memory out of 3000000
- 18485 multiletter control sequences out of 15000+200000
- 19290 words of font info for 70 fonts, out of 3000000 for 9000
+ 15248 strings out of 493333
+ 260751 string characters out of 3139190
+ 341369 words of memory out of 3000000
+ 18483 multiletter control sequences out of 15000+200000
+ 18595 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,14n,42p,10426b,601s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/symbols/msbm10.pfb>
-Output written on Final_Report.pdf (31 pages, 513826 bytes).
+ 39i,14n,42p,10426b,444s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/symbols/msbm10.pfb>
+Output written on Final_Report.pdf (32 pages, 499994 bytes).
 PDF statistics:
- 655 PDF objects out of 1000 (max. 8388607)
- 160 named destinations out of 1000 (max. 500000)
+ 652 PDF objects out of 1000 (max. 8388607)
+ 161 named destinations out of 1000 (max. 500000)
  309 words of extra memory for PDF output out of 10000 (max. 10000000)
 
