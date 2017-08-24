@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.14)  24 AUG 2017 14:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.14)  24 AUG 2017 21:54
 entering extended mode
 **./Final_Report.tex
 (Final_Report.tex
@@ -1439,11 +1439,11 @@ LaTeX Info: Redefining \nameref on input line 24.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 56.
+LaTeX Font Info:    Try loading font information for U+msa on input line 55.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 56.
+LaTeX Font Info:    Try loading font information for U+msb on input line 55.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1451,7 +1451,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24 ... Sub-Determinant}{20}{subsubsection.5.4.3}
+l.25 ...imal Hamiltonian}{20}{subsubsection.5.4.4}
                                                    [1])
 \tf@toc=\write4
 \openout4 = `Final_Report.toc'.
@@ -1462,21 +1462,21 @@ l.24 ... Sub-Determinant}{20}{subsubsection.5.4.3}
 
 
 [2] [3]
-Overfull \hbox (3.371pt too wide) in paragraph at lines 88--89
+Overfull \hbox (3.371pt too wide) in paragraph at lines 87--88
 []\OT1/cmr/m/n/10.95 From our def-i-ni-tion []1.1[], it fol-lows that the den-s
 ity ma-trix is both positive-semidefinite, 
  []
 
-[4] [5] <RKPOINT.pdf, id=257, 208.39774pt x 197.19273pt>
+[4] [5] <RKPOINT.pdf, id=262, 208.39774pt x 197.19273pt>
 File: RKPOINT.pdf Graphic file (type pdf)
  <use RKPOINT.pdf>
-Package pdftex.def Info: RKPOINT.pdf used on input line 203.
+Package pdftex.def Info: RKPOINT.pdf used on input line 195.
 (pdftex.def)             Requested size: 208.39722pt x 197.19223pt.
 
-[6] <RKDENSITY.pdf, id=273, 234.14384pt x 200.73624pt>
+[6] <RKDENSITY.pdf, id=278, 234.14384pt x 200.73624pt>
 File: RKDENSITY.pdf Graphic file (type pdf)
  <use RKDENSITY.pdf>
-Package pdftex.def Info: RKDENSITY.pdf used on input line 212.
+Package pdftex.def Info: RKDENSITY.pdf used on input line 204.
 (pdftex.def)             Requested size: 234.14326pt x 200.73573pt.
 
 [7 <./RKPOINT.pdf> <./RKDENSITY.pdf
@@ -1484,82 +1484,82 @@ Package pdftex.def Info: RKDENSITY.pdf used on input line 212.
 pdfTeX warning: pdflatex (file ./RKDENSITY.pdf): PDF inclusion: multiple pdfs w
 ith page group included in a single page
 >] [8] [9]
-Overfull \hbox (10.58267pt too wide) in paragraph at lines 320--321
+Overfull \hbox (10.58267pt too wide) in paragraph at lines 312--313
 \OT1/cmr/m/n/10.95 sym-plec-tic eigen-val-ues can also be cal-cu-lated by con-s
 id-er-ing the (stan-dard, non-symplectic)
  []
 
 
-Overfull \hbox (25.67252pt too wide) detected at line 340
+Overfull \hbox (25.67252pt too wide) detected at line 332
 \OML/cmm/m/it/10.95  \OT1/cmr/m/n/10.95 = [] = []  []\OML/cmm/m/it/10.95 :
  []
 
 [10] [11] [12] [13] [14] [15]
-Overfull \hbox (1.04437pt too wide) in paragraph at lines 550--551
+Overfull \hbox (1.04437pt too wide) in paragraph at lines 542--543
 \OT1/cmr/m/n/10.95 plete-ness, the code is avail-able on GitHub []$\OT1/cmtt/m/
 n/10.95 https : / / github . com / RiannaK / FinalReport$[]\OT1/cmr/m/n/10.95 .
 
  []
 
-<OneModePlot2.png, id=458, 826.88925pt x 591.4095pt>
+<OneModePlot2.png, id=464, 826.88925pt x 591.4095pt>
 File: OneModePlot2.png Graphic file (type png)
  <use OneModePlot2.png>
-Package pdftex.def Info: OneModePlot2.png used on input line 558.
+Package pdftex.def Info: OneModePlot2.png used on input line 550.
 (pdftex.def)             Requested size: 330.74985pt x 236.5596pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<OneModeGlobalMinima.png, id=461, 882.4167pt x 665.6067pt>
+<OneModeGlobalMinima.png, id=467, 882.4167pt x 665.6067pt>
 File: OneModeGlobalMinima.png Graphic file (type png)
 
 <use OneModeGlobalMinima.png>
-Package pdftex.def Info: OneModeGlobalMinima.png used on input line 567.
+Package pdftex.def Info: OneModeGlobalMinima.png used on input line 559.
 (pdftex.def)             Requested size: 441.20728pt x 332.80254pt.
 
-Overfull \hbox (24.37439pt too wide) in paragraph at lines 567--568
+Overfull \hbox (24.37439pt too wide) in paragraph at lines 559--560
  [][] 
  []
 
 [16] [17 <./OneModePlot2.png>] [18 <./OneModeGlobalMinima.png>]
-Overfull \hbox (39.69331pt too wide) in paragraph at lines 650--650
+Overfull \hbox (39.69331pt too wide) in paragraph at lines 642--642
 [] 
  []
 
 [19]
 File: OneModePlot2.png Graphic file (type png)
  <use OneModePlot2.png>
-Package pdftex.def Info: OneModePlot2.png used on input line 670.
+Package pdftex.def Info: OneModePlot2.png used on input line 662.
 (pdftex.def)             Requested size: 330.74985pt x 236.5596pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [20] [21] [22] [23] [24]
-Overfull \hbox (56.85004pt too wide) in paragraph at lines 888--888
+Overfull \hbox (56.85004pt too wide) in paragraph at lines 880--880
 [] 
  []
 
 [25] [26] [27] [28] [29] (Final_Report.bbl [30])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1069.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1064.
  [31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1069.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1064.
  (Final_Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1069.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1069.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1064.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1064.
 
 Package rerunfilecheck Info: File `Final_Report.out' has not changed.
-(rerunfilecheck)             Checksum: E500333A051FF27976B9C75BBA6C64BD;2570.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1069.
+(rerunfilecheck)             Checksum: 74F4498BC1509C9FE55942B89CBE85B2;2568.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1064.
  ) 
 Here is how much of TeX's memory you used:
- 15248 strings out of 493333
- 260751 string characters out of 3139190
- 341369 words of memory out of 3000000
- 18483 multiletter control sequences out of 15000+200000
+ 15250 strings out of 493333
+ 260782 string characters out of 3139190
+ 341459 words of memory out of 3000000
+ 18485 multiletter control sequences out of 15000+200000
  18595 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,14n,42p,10426b,444s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,14n,42p,10426b,442s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTe
@@ -1575,9 +1575,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
 s/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/symbols/msbm10.pfb>
-Output written on Final_Report.pdf (32 pages, 499994 bytes).
+Output written on Final_Report.pdf (32 pages, 501711 bytes).
 PDF statistics:
- 652 PDF objects out of 1000 (max. 8388607)
+ 658 PDF objects out of 1000 (max. 8388607)
  161 named destinations out of 1000 (max. 500000)
  309 words of extra memory for PDF output out of 10000 (max. 10000000)
 

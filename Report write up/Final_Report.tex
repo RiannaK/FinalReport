@@ -29,8 +29,7 @@
 			
 			\textbf{\LARGE{Hamiltonian Control of Open Gaussian Systems}}
 			
-			\vspace{0.5cm}
-			
+			\vspace{1.5cm}			
 			\large{Rianna Kelly}
 			
 			\vfill
@@ -45,7 +44,7 @@
 			University College London\\
 			August 2017
 			
-			\vspace{0.25\textheight}
+			\vspace{0.3\textheight}
 			
 			
 		\end{center}
@@ -53,7 +52,7 @@
 
 	\begin{abstract}
 		
-	We examine the steady state diffusion equation with the aim of deriving the Hamiltonian that achieves the lowest entropy and thus maximal cooling for a given configuration. We consider both the one and two mode cases with the latter case playing an important role in the field of optomechanics and non-classical properties such as entanglement. We present an analytical proof of the lower bound on the determinant of the covariance matrix, $\sigma$, in the one mode case and verify our findings numerically. In the two mode case, we propose a lower bound on the $2 \times 2$ sub determinant and verify the hypothesis numerically. DON'T I WANT TO TALK ABOUT THE HAMILTONIANS, I KNOW THE AIM WAS TO LOWER THE DET BUT DIDN'T I DO THAT BY FINDING THE OPTIMAL HAMILTONIAN?
+	We examine the steady state diffusion equation with the aim of deriving the Hamiltonian that achieves the lowest entropy and thus maximal cooling for a given configuration. We consider both the one and two mode cases with the latter case playing an important role in the field of optomechanics and non-classical properties such as entanglement. We present an analytical proof of the lower bound on the determinant of the covariance matrix, $\sigma$, in the one mode case and verify our findings numerically. In the two mode case, we propose a lower bound on the $2 \times 2$ sub-determinant and verify the hypothesis numerically. In both cases, we provide analytical forms the Hamiltonians that give rise to these lower bounds. 
 	
 	\end{abstract}
 		
@@ -63,15 +62,15 @@
 	\newpage
 		
 	\section{Introduction}
+	\label{sec:intro}
+	Achieving low entropy systems is essential to the development of quantum technologies such as quantum computing. We are, therefore, motivated to find such systems and, in this paper, we investigate the forms of the optimal Hamiltonian (optimal in the sense of minimum entropy) under a variety of regimes.
+	
+	Before discussing our findings, however, we must first lay the mathematical foundations necessary to address the question at hand. To that end, we provide an overview of continuous variable (CV) systems and Gaussian states. CV systems are systems that are described by a pair of canonical operators, and they have found themselves to be instrumental in the development of quantum technologies. We also introduce the covariance matrix, $\sigma$, as well as the diffusion equation (with the latter providing a mathematical description of diffusive Gaussian dynamics).
+	
+	The entropy of a system is determined by the determinant of the covariance matrix, $\sigma$. Hence, the problem of finding the minimum entropy of a system is equivalent to finding a system that yields the smallest possible determinant. The concern of this report is to find the minimum (sub-) determinant of $\sigma$ by varying the Hamiltonian. Our motivation to vary the Hamiltonian stems from real-world considerations; in practice, it is hard to control (or minimise) the external factors that feed into the steady state diffusion equation (such as noise and dissipation) but it is feasible that we can control the form of the Hamiltonian. 
 	
 	
-	In the conclusions and intro, I recommend you to stress the main results: the analytical proof that H=0 is the best one can do for one mode, and the numerical finding about the minimum local determinant for two modes.
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus sem, ornare in commodo venenatis, pellentesque eget eros. Praesent at laoreet leo. Aliquam vitae elit eu tortor malesuada luctus at non lectus. Ut dapibus quis est nec facilisis. Phasellus et vehicula tellus. Suspendisse ut fringilla tortor. Aenean convallis hendrerit maximus. Ut aliquet purus in eros tincidunt, aliquet semper quam gravida. Donec nec augue quis eros malesuada scelerisque et non neque. Curabitur et orci consequat, vehicula neque vitae, facilisis mauris. Aliquam nec interdum dui. Nam fermentum sem lorem, eu condimentum ex bibendum a. Aliquam eu scelerisque magna, vitae feugiat orci. Nunc.
-	
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus sem, ornare in commodo venenatis, pellentesque eget eros. Praesent at laoreet leo. Aliquam vitae elit eu tortor malesuada luctus at non lectus. Ut dapibus quis est nec facilisis. Phasellus et vehicula tellus. Suspendisse ut fringilla tortor. Aenean convallis hendrerit maximus. Ut aliquet purus in eros tincidunt, aliquet semper quam gravida. Donec nec augue quis eros malesuada scelerisque et non neque. Curabitur et orci consequat, vehicula neque vitae, facilisis mauris. Aliquam nec interdum dui. Nam fermentum sem lorem, eu condimentum ex bibendum a. Aliquam eu scelerisque magna, vitae feugiat orci. Nunc.
-	
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus sem, ornare in commodo venenatis, pellentesque eget eros. Praesent at laoreet leo. Aliquam vitae elit eu tortor malesuada luctus at non lectus. Ut dapibus quis est nec facilisis. Phasellus et vehicula tellus. Suspendisse ut fringilla tortor. Aenean convallis hendrerit maximus. Ut aliquet purus in eros tincidunt, aliquet semper quam gravida. Donec nec augue quis eros malesuada scelerisque et non neque. Curabitur et orci consequat, vehicula neque vitae, facilisis mauris. Aliquam nec interdum dui. Nam fermentum sem lorem, eu condimentum ex bibendum a. Aliquam eu scelerisque magna, vitae feugiat orci. Nunc.
-	
+	In Sections \ref{sec:cvs} and \ref{sec:gaussian}, we provide an overview of CV systems and Gaussian states respectively. Section \ref{sec:dynamics} details the relevant mathematics of system dynamics and sets out the diffusion equation that is central to our investigations. In Section \ref{sec:optimalcooling}, we detail our investigations of optimal Hamiltonians and provide lower bounds on the minimum determinant. We present our conclusions in Section \ref{sec:conc}.
 	
 	\subsection{The Density Operator}
 	\label{sec:densityop}
@@ -105,13 +104,6 @@
 	
 	This equation neatly captures all of the measurable/observable uncertainties of the system and, therefore, justifies our usage of density operators.
 	
-	\iffalse
-	
-	\subsection{Discrete Variable Systems}
-
-	Our focus in this report is on CV systems. Before discussing those, however, it is worth briefly noting that discrete variable systems exist and arise frequently in quantum mechanics. As the name suggests, discrete variable systems are ones in which the possible outcomes of a measurement are discrete (or quantised). This manifests itself mathematically via operators whose eigenvalues are discrete. If, in addition to being discrete, the eigenvalues form a finite set, the system can be handled using matrix vector methods. There are numerous examples of discrete variable systems such as the energy levels of a quantum harmonic oscillator (infinite dimensional Hilbert space) or the spin of an electron (two dimensional Hilbert space).
-	
-	\fi
 	
 	\section{Continuous Variable Systems}
 	\label{sec:cvs}
@@ -451,11 +443,11 @@
 	
 	
 	\section{The Optimal Cooling Hamiltonian}
+	\label{sec:optimalcooling}
+	\subsection{Overview}
+	The entropy of a system, $S$, is determined by the covariance matrix, $\sigma$, and the purity, $\gamma$, is given by $1-S$ \cite{Genoni16}. As we noted in our Introduction, Section \ref{sec:intro}, we wish to achieve low entropy, pure states as these are essential to the development of quantum technologies such as quantum computing \cite{Chuang}. To achieve a low entropy system, we use cooling -- a process that drains the entropy from a system by removing heat -- thus increasing the overall purity.
 	
-	\subsection{Motivation}
-	The entropy of the system, $S$, is determined by the covariance matrix, $\sigma$, and the purity, $\gamma$, is given by $1-S$ \cite{Genoni16}. Our ultimate goal is to achieve low entropy, pure states as these are essential to the development of quantum technologies such as quantum computing \cite{Chuang}. To achieve a low entropy system, we use cooling -- a process that drains the entropy from a system by removing heat -- thus increasing the overall purity.
-	
-	The entropy of the state is determined by the determinant of $\sigma$ \cite{Genoni16}. Hence, the problem of finding the minimum entropy of a system is equivalent to finding a system that yields the smallest possible determinant. This investigation aims to find the minimum determinant of $\sigma$ by varying the Hamiltonian. For the sake of brevity, we shall refer to the minimum determinant of $\sigma$ as $\sigma_\text{min}$ throughout this report. Our motivation to vary the Hamiltonian stems from real-world considerations; in practice, it is hard to control (or minimise) the external factors that feed into the steady state diffusion equation (such as noise and dissipation) but it is feasible that we can control the form of the Hamiltonian. The optimal cooling Hamiltonian is therefore taken to be the one which, when considered within the definition of $A$ as shown in \ref{eq:36}, provides $\sigma_\text{min}$. 
+	The entropy of the state is determined by the determinant of $\sigma$ \cite{Genoni16}. Hence, the problem of finding the minimum entropy of a system is equivalent to finding a system that yields the smallest possible determinant. This investigation aims to find the minimum determinant of $\sigma$ by varying the Hamiltonian. For the sake of brevity, we shall refer to the minimum determinant of $\sigma$ as $\sigma_\text{min}$ throughout this report. The optimal cooling Hamiltonian is therefore taken to be the one which, when considered within the definition of $A$ as shown in \ref{eq:36}, provides $\sigma_\text{min}$. 
 	
 	The work within this thesis is limited to quadratic Hamiltonians of the form described by \ref{eq:22}. Reducing the scope in this way is not a major limitation, however, as most noise (and other interaction terms) involve quadratic Hamiltonians and this formalism applies to a range of platforms including optomechanics, quantum light and trapped ions to name only a few \cite{Serafini17}. 
 	
@@ -490,7 +482,7 @@
 	A &= A_0 + \Omega H \quad\text{where}\quad A_0 = -\frac{1}{2}\mathbb{I}_2,&\\
 	D &= \chi \mathbb{I}_2.&
 	\end{align*}
-	In the definition of $A$, $A_0$ describes the dissipation towards the environment (the loss rate) and $\Omega H$ describes the unitary transformation where we restrict $H$ to $H>0$. In the definition of $D$, $\chi$ accounts for the noise (measured in frequency). In the one mode case, this is taken to be the only environment parameter. 
+	In the definition of $A$, $A_0$ describes the dissipation into the environment (the loss rate) and $\Omega H$ describes the unitary transformation where we restrict $H$ to $H>0$. In the definition of $D$, $\chi$ accounts for the noise (measured in frequency). In the one mode case, this is taken to be the only environment parameter. 
 	
 	$A$ and $D$ are drift and diffusion matrices of a quantum system and so the condition given in Eq. \ref{eq:37} holds. Substituting our expression for $A$, the condition becomes
 	\begin{align} 
@@ -919,7 +911,10 @@
 	\section{Conclusion}
 	\label{sec:conc}
 	
-	We have 
+	We have investigated the form of the Hamiltonian that gives rise to the lowest (sub-) determinant of $\sigma$, and thus lowest entropy. In the one mode case, we have provided a proof on the lower bound and verified this bound numerically. We show that this lower bound is achieved by any Hamiltonian of the form $H=\alpha\mathbb{I}$ for $\alpha>0$. 
+	
+	Similarly, in the generalised two mode case, we propose a lower bound on $\sigma_\text{min}$ based on numerical optimisation. While we have not proven this bound analytically, we have shown a very strong agreement between the model and numerical observations via an $R^2$ test. Further, we have provided an analytical form of the Hamiltonian that does, indeed, match the proposed lower bound. 
+	
 
 	\begin{appendices}
 	
